@@ -1,0 +1,2642 @@
+{
+  "fetched_at": "2026-05-19T05:40:01.131277+00:00",
+  "league": "great_league",
+  "league_id": 0,
+  "pokemon_usage": [
+    {
+      "charged_moves": [
+        {
+          "move_id": 62,
+          "move_type": "ground",
+          "name": "じならし",
+          "usage_count": 22
+        },
+        {
+          "move_id": 676,
+          "move_type": "steel",
+          "name": "デカハンマー",
+          "usage_count": 17
+        },
+        {
+          "move_id": 246,
+          "move_type": "steel",
+          "name": "ヘビーボンバー",
+          "usage_count": 6
+        },
+        {
+          "move_id": 382,
+          "move_type": "fairy",
+          "name": "じゃれつく",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 959,
+      "fast_moves": [
+        {
+          "move_id": 160,
+          "move_type": "fairy",
+          "name": "ようせいのかぜ",
+          "usage_count": 31
+        }
+      ],
+      "form_id": 0,
+      "rank": 1,
+      "species": "デカヌチャン",
+      "usage_count": 993,
+      "usage_pct": 6.130386467465119
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 18,
+          "move_type": "water",
+          "name": "アクアテール",
+          "usage_count": 35
+        },
+        {
+          "move_id": 524,
+          "move_type": "rock",
+          "name": "ストーンエッジ",
+          "usage_count": 26
+        },
+        {
+          "move_id": 347,
+          "move_type": "ground",
+          "name": "どろばくだん",
+          "usage_count": 19
+        },
+        {
+          "move_id": 4,
+          "move_type": "poison",
+          "name": "アシッドボム",
+          "usage_count": 1
+        },
+        {
+          "move_id": 131,
+          "move_type": "fighting",
+          "name": "ドレインパンチ",
+          "usage_count": 1
+        },
+        {
+          "move_id": 494,
+          "move_type": "poison",
+          "name": "ヘドロばくだん",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 195,
+      "fast_moves": [
+        {
+          "move_id": 348,
+          "move_type": "ground",
+          "name": "マッドショット",
+          "usage_count": 52
+        },
+        {
+          "move_id": 595,
+          "move_type": "water",
+          "name": "みずでっぽう",
+          "usage_count": 1
+        }
+      ],
+      "form_id": 0,
+      "rank": 2,
+      "species": "ヌオー",
+      "usage_count": 937,
+      "usage_pct": 5.784664773428819
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 455,
+          "move_type": "ground",
+          "name": "すなじごく",
+          "usage_count": 38
+        },
+        {
+          "move_id": 443,
+          "move_type": "rock",
+          "name": "がんせきふうじ",
+          "usage_count": 36
+        },
+        {
+          "move_id": 139,
+          "move_type": "ground",
+          "name": "じしん",
+          "usage_count": 8
+        },
+        {
+          "move_id": 340,
+          "move_type": "steel",
+          "name": "ミラーショット",
+          "usage_count": 3
+        },
+        {
+          "move_id": 246,
+          "move_type": "steel",
+          "name": "ヘビーボンバー",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 205,
+      "fast_moves": [
+        {
+          "move_id": 592,
+          "move_type": "electric",
+          "name": "ボルトチェンジ",
+          "usage_count": 42
+        },
+        {
+          "move_id": 59,
+          "move_type": "bug",
+          "name": "むしくい",
+          "usage_count": 25
+        },
+        {
+          "move_id": 530,
+          "move_type": "bug",
+          "name": "むしのていこう",
+          "usage_count": 2
+        }
+      ],
+      "form_id": 0,
+      "rank": 3,
+      "species": "フォレトス",
+      "usage_count": 811,
+      "usage_pct": 5.006790961847141
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 468,
+          "move_type": "ghost",
+          "name": "シャドーボール",
+          "usage_count": 24
+        },
+        {
+          "move_id": 47,
+          "move_type": "normal",
+          "name": "のしかかり",
+          "usage_count": 21
+        },
+        {
+          "move_id": 139,
+          "move_type": "ground",
+          "name": "じしん",
+          "usage_count": 5
+        },
+        {
+          "move_id": 261,
+          "move_type": "normal",
+          "name": "はかいこうせん",
+          "usage_count": 1
+        },
+        {
+          "move_id": 505,
+          "move_type": "grass",
+          "name": "ソーラービーム",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 463,
+      "fast_moves": [
+        {
+          "move_id": 447,
+          "move_type": "rock",
+          "name": "ころがる",
+          "usage_count": 33
+        },
+        {
+          "move_id": 300,
+          "move_type": "ghost",
+          "name": "したでなめる",
+          "usage_count": 1
+        },
+        {
+          "move_id": 620,
+          "move_type": "psychic",
+          "name": "しねんのずつき",
+          "usage_count": 1
+        }
+      ],
+      "form_id": 0,
+      "rank": 4,
+      "species": "ベロベルト",
+      "usage_count": 790,
+      "usage_pct": 4.877145326583529
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 259,
+          "move_type": "water",
+          "name": "ハイドロカノン",
+          "usage_count": 25
+        },
+        {
+          "move_id": 268,
+          "move_type": "ice",
+          "name": "れいとうビーム",
+          "usage_count": 14
+        },
+        {
+          "move_id": 96,
+          "move_type": "dark",
+          "name": "かみくだく",
+          "usage_count": 10
+        }
+      ],
+      "dex_id": 160,
+      "fast_moves": [
+        {
+          "move_id": 469,
+          "move_type": "ghost",
+          "name": "シャドークロー",
+          "usage_count": 31
+        },
+        {
+          "move_id": 41,
+          "move_type": "dark",
+          "name": "かみつく",
+          "usage_count": 1
+        },
+        {
+          "move_id": 595,
+          "move_type": "water",
+          "name": "みずでっぽう",
+          "usage_count": 1
+        }
+      ],
+      "form_id": 0,
+      "rank": 5,
+      "species": "オーダイル",
+      "usage_count": 685,
+      "usage_pct": 4.228917150265465
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 275,
+          "move_type": "ice",
+          "name": "こごえるかぜ",
+          "usage_count": 22
+        },
+        {
+          "move_id": 544,
+          "move_type": "normal",
+          "name": "スピードスター",
+          "usage_count": 22
+        },
+        {
+          "move_id": 112,
+          "move_type": "fairy",
+          "name": "チャームボイス",
+          "usage_count": 2
+        },
+        {
+          "move_id": 382,
+          "move_type": "fairy",
+          "name": "じゃれつく",
+          "usage_count": 1
+        },
+        {
+          "move_id": 268,
+          "move_type": "ice",
+          "name": "れいとうビーム",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 40,
+      "fast_moves": [
+        {
+          "move_id": 71,
+          "move_type": "fairy",
+          "name": "あまえる",
+          "usage_count": 31
+        },
+        {
+          "move_id": 166,
+          "move_type": "dark",
+          "name": "だましうち",
+          "usage_count": 2
+        },
+        {
+          "move_id": 390,
+          "move_type": "normal",
+          "name": "はたく",
+          "usage_count": 1
+        }
+      ],
+      "form_id": 0,
+      "rank": 6,
+      "species": "プクリン",
+      "usage_count": 669,
+      "usage_pct": 4.1301395233979505
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 468,
+          "move_type": "ghost",
+          "name": "シャドーボール",
+          "usage_count": 25
+        },
+        {
+          "move_id": 539,
+          "move_type": "water",
+          "name": "なみのり",
+          "usage_count": 22
+        },
+        {
+          "move_id": 268,
+          "move_type": "ice",
+          "name": "れいとうビーム",
+          "usage_count": 2
+        },
+        {
+          "move_id": 58,
+          "move_type": "water",
+          "name": "バブルこうせん",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 593,
+      "fast_moves": [
+        {
+          "move_id": 248,
+          "move_type": "ghost",
+          "name": "たたりめ",
+          "usage_count": 35
+        },
+        {
+          "move_id": 57,
+          "move_type": "water",
+          "name": "あわ",
+          "usage_count": 1
+        }
+      ],
+      "form_id": 0,
+      "rank": 7,
+      "species": "ブルンゲル",
+      "usage_count": 658,
+      "usage_pct": 4.062229904926534
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 180,
+          "move_type": "fire",
+          "name": "かえんほうしゃ",
+          "usage_count": 25
+        },
+        {
+          "move_id": 485,
+          "move_type": "flying",
+          "name": "ゴッドバード",
+          "usage_count": 24
+        },
+        {
+          "move_id": 344,
+          "move_type": "fairy",
+          "name": "ムーンフォース",
+          "usage_count": 3
+        },
+        {
+          "move_id": 127,
+          "move_type": "dragon",
+          "name": "りゅうのはどう",
+          "usage_count": 2
+        }
+      ],
+      "dex_id": 334,
+      "fast_moves": [
+        {
+          "move_id": 124,
+          "move_type": "dragon",
+          "name": "りゅうのいぶき",
+          "usage_count": 31
+        },
+        {
+          "move_id": 375,
+          "move_type": "flying",
+          "name": "つつく",
+          "usage_count": 6
+        }
+      ],
+      "form_id": 0,
+      "rank": 8,
+      "species": "チルタリス",
+      "usage_count": 639,
+      "usage_pct": 3.9449314730213603
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 134,
+          "move_type": "flying",
+          "name": "ドリルくちばし",
+          "usage_count": 35
+        },
+        {
+          "move_id": 259,
+          "move_type": "water",
+          "name": "ハイドロカノン",
+          "usage_count": 33
+        },
+        {
+          "move_id": 183,
+          "move_type": "steel",
+          "name": "ラスターカノン",
+          "usage_count": 2
+        }
+      ],
+      "dex_id": 395,
+      "fast_moves": [
+        {
+          "move_id": 330,
+          "move_type": "steel",
+          "name": "きんぞくおん",
+          "usage_count": 36
+        },
+        {
+          "move_id": 601,
+          "move_type": "water",
+          "name": "たきのぼり",
+          "usage_count": 12
+        },
+        {
+          "move_id": 520,
+          "move_type": "steel",
+          "name": "はがねのつばさ",
+          "usage_count": 2
+        }
+      ],
+      "form_id": 0,
+      "rank": 9,
+      "species": "エンペルト",
+      "usage_count": 632,
+      "usage_pct": 3.901716261266823
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 347,
+          "move_type": "ground",
+          "name": "どろばくだん",
+          "usage_count": 19
+        },
+        {
+          "move_id": 113,
+          "move_type": "electric",
+          "name": "ほうでん",
+          "usage_count": 18
+        },
+        {
+          "move_id": 351,
+          "move_type": "water",
+          "name": "だくりゅう",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 618,
+      "fast_moves": [
+        {
+          "move_id": 566,
+          "move_type": "electric",
+          "name": "でんきショック",
+          "usage_count": 24
+        },
+        {
+          "move_id": 348,
+          "move_type": "ground",
+          "name": "マッドショット",
+          "usage_count": 5
+        }
+      ],
+      "form_id": 0,
+      "rank": 10,
+      "species": "マッギョ",
+      "usage_count": 512,
+      "usage_pct": 3.1608840597604644
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 178,
+          "move_type": "fire",
+          "name": "ニトロチャージ",
+          "usage_count": 20
+        },
+        {
+          "move_id": 187,
+          "move_type": "flying",
+          "name": "そらをとぶ",
+          "usage_count": 18
+        },
+        {
+          "move_id": 54,
+          "move_type": "flying",
+          "name": "ブレイブバード",
+          "usage_count": 11
+        }
+      ],
+      "dex_id": 663,
+      "fast_moves": [
+        {
+          "move_id": 277,
+          "move_type": "fire",
+          "name": "やきつくす",
+          "usage_count": 36
+        },
+        {
+          "move_id": 174,
+          "move_type": "fire",
+          "name": "ほのおのうず",
+          "usage_count": 4
+        }
+      ],
+      "form_id": 0,
+      "rank": 11,
+      "species": "ファイアロー",
+      "usage_count": 477,
+      "usage_pct": 2.944808000987776
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 134,
+          "move_type": "flying",
+          "name": "ドリルくちばし",
+          "usage_count": 16
+        },
+        {
+          "move_id": 135,
+          "move_type": "ground",
+          "name": "ドリルライナー",
+          "usage_count": 10
+        }
+      ],
+      "dex_id": 22,
+      "fast_moves": [
+        {
+          "move_id": 375,
+          "move_type": "flying",
+          "name": "つつく",
+          "usage_count": 20
+        }
+      ],
+      "form_id": 0,
+      "rank": 12,
+      "species": "オニドリル",
+      "usage_count": 447,
+      "usage_pct": 2.759599950611187
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 648,
+          "move_type": "ground",
+          "name": "ねっさのだいち",
+          "usage_count": 25
+        },
+        {
+          "move_id": 173,
+          "move_type": "fire",
+          "name": "ほのおのパンチ",
+          "usage_count": 20
+        },
+        {
+          "move_id": 261,
+          "move_type": "normal",
+          "name": "はかいこうせん",
+          "usage_count": 3
+        }
+      ],
+      "dex_id": 660,
+      "fast_moves": [
+        {
+          "move_id": 348,
+          "move_type": "ground",
+          "name": "マッドショット",
+          "usage_count": 24
+        },
+        {
+          "move_id": 414,
+          "move_type": "normal",
+          "name": "でんこうせっか",
+          "usage_count": 11
+        }
+      ],
+      "form_id": 0,
+      "rank": 13,
+      "species": "ホルード",
+      "usage_count": 389,
+      "usage_pct": 2.401531053216446
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 27,
+          "move_type": "fighting",
+          "name": "はどうだん",
+          "usage_count": 22
+        },
+        {
+          "move_id": 408,
+          "move_type": "psychic",
+          "name": "サイコショック",
+          "usage_count": 17
+        },
+        {
+          "move_id": 15,
+          "move_type": "rock",
+          "name": "げんしのちから",
+          "usage_count": 3
+        },
+        {
+          "move_id": 103,
+          "move_type": "fairy",
+          "name": "マジカルシャイン",
+          "usage_count": 2
+        },
+        {
+          "move_id": 180,
+          "move_type": "fire",
+          "name": "かえんほうしゃ",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 468,
+      "fast_moves": [
+        {
+          "move_id": 375,
+          "move_type": "flying",
+          "name": "つつく",
+          "usage_count": 29
+        },
+        {
+          "move_id": 71,
+          "move_type": "fairy",
+          "name": "あまえる",
+          "usage_count": 3
+        }
+      ],
+      "form_id": 0,
+      "rank": 14,
+      "species": "トゲキッス",
+      "usage_count": 371,
+      "usage_pct": 2.2904062229904927
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 113,
+          "move_type": "electric",
+          "name": "ほうでん",
+          "usage_count": 9
+        },
+        {
+          "move_id": 617,
+          "move_type": "bug",
+          "name": "シザークロス",
+          "usage_count": 9
+        },
+        {
+          "move_id": 96,
+          "move_type": "dark",
+          "name": "かみくだく",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 737,
+      "fast_moves": [
+        {
+          "move_id": 592,
+          "move_type": "electric",
+          "name": "ボルトチェンジ",
+          "usage_count": 16
+        },
+        {
+          "move_id": 508,
+          "move_type": "electric",
+          "name": "スパーク",
+          "usage_count": 1
+        }
+      ],
+      "form_id": 0,
+      "rank": 15,
+      "species": "デンヂムシ",
+      "usage_count": 339,
+      "usage_pct": 2.0928509692554638
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 660,
+          "move_type": "ghost",
+          "name": "ふんどのこぶし",
+          "usage_count": 9
+        },
+        {
+          "move_id": 77,
+          "move_type": "fighting",
+          "name": "インファイト",
+          "usage_count": 6
+        },
+        {
+          "move_id": 271,
+          "move_type": "ice",
+          "name": "れいとうパンチ",
+          "usage_count": 2
+        },
+        {
+          "move_id": 359,
+          "move_type": "dark",
+          "name": "つじぎり",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 57,
+      "fast_moves": [
+        {
+          "move_id": 287,
+          "move_type": "fighting",
+          "name": "からてチョップ",
+          "usage_count": 13
+        },
+        {
+          "move_id": 305,
+          "move_type": "fighting",
+          "name": "けたぐり",
+          "usage_count": 1
+        }
+      ],
+      "form_id": 0,
+      "rank": 16,
+      "species": "オコリザル",
+      "usage_count": 336,
+      "usage_pct": 2.0743301642178045
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 382,
+          "move_type": "fairy",
+          "name": "じゃれつく",
+          "usage_count": 13
+        },
+        {
+          "move_id": 268,
+          "move_type": "ice",
+          "name": "れいとうビーム",
+          "usage_count": 9
+        },
+        {
+          "move_id": 260,
+          "move_type": "water",
+          "name": "ハイドロポンプ",
+          "usage_count": 7
+        }
+      ],
+      "dex_id": 184,
+      "fast_moves": [
+        {
+          "move_id": 57,
+          "move_type": "water",
+          "name": "あわ",
+          "usage_count": 25
+        }
+      ],
+      "form_id": 0,
+      "rank": 17,
+      "species": "マリルリ",
+      "usage_count": 335,
+      "usage_pct": 2.068156562538585
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 464,
+          "move_type": "grass",
+          "name": "タネばくだん",
+          "usage_count": 13
+        },
+        {
+          "move_id": 468,
+          "move_type": "ghost",
+          "name": "シャドーボール",
+          "usage_count": 12
+        },
+        {
+          "move_id": 196,
+          "move_type": "dark",
+          "name": "イカサマ",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 711,
+      "fast_moves": [
+        {
+          "move_id": 277,
+          "move_type": "fire",
+          "name": "やきつくす",
+          "usage_count": 20
+        },
+        {
+          "move_id": 248,
+          "move_type": "ghost",
+          "name": "たたりめ",
+          "usage_count": 1
+        }
+      ],
+      "form_id": 3,
+      "rank": 18,
+      "species": "パンプジン(とくだい)",
+      "usage_count": 324,
+      "usage_pct": 2.000246944067169
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 443,
+          "move_type": "rock",
+          "name": "がんせきふうじ",
+          "usage_count": 22
+        },
+        {
+          "move_id": 215,
+          "move_type": "grass",
+          "name": "くさむすび",
+          "usage_count": 19
+        },
+        {
+          "move_id": 440,
+          "move_type": "rock",
+          "name": "いわなだれ",
+          "usage_count": 2
+        },
+        {
+          "move_id": 62,
+          "move_type": "ground",
+          "name": "じならし",
+          "usage_count": 2
+        }
+      ],
+      "dex_id": 346,
+      "fast_moves": [
+        {
+          "move_id": 2,
+          "move_type": "poison",
+          "name": "ようかいえき",
+          "usage_count": 23
+        },
+        {
+          "move_id": 64,
+          "move_type": "grass",
+          "name": "タネマシンガン",
+          "usage_count": 14
+        }
+      ],
+      "form_id": 0,
+      "rank": 19,
+      "species": "ユレイドル",
+      "usage_count": 320,
+      "usage_pct": 1.9755525373502902
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 544,
+          "move_type": "normal",
+          "name": "スピードスター",
+          "usage_count": 24
+        },
+        {
+          "move_id": 647,
+          "move_type": "grass",
+          "name": "くさわけ",
+          "usage_count": 17
+        },
+        {
+          "move_id": 55,
+          "move_type": "fighting",
+          "name": "かわらわり",
+          "usage_count": 15
+        },
+        {
+          "move_id": 110,
+          "move_type": "ground",
+          "name": "あなをほる",
+          "usage_count": 1
+        },
+        {
+          "move_id": 261,
+          "move_type": "normal",
+          "name": "はかいこうせん",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 162,
+      "fast_moves": [
+        {
+          "move_id": 534,
+          "move_type": "dark",
+          "name": "ふいうち",
+          "usage_count": 40
+        },
+        {
+          "move_id": 414,
+          "move_type": "normal",
+          "name": "でんこうせっか",
+          "usage_count": 2
+        }
+      ],
+      "form_id": 0,
+      "rank": 20,
+      "species": "オオタチ",
+      "usage_count": 313,
+      "usage_pct": 1.9323373255957528
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 468,
+          "move_type": "ghost",
+          "name": "シャドーボール",
+          "usage_count": 10
+        },
+        {
+          "move_id": 228,
+          "move_type": "steel",
+          "name": "ジャイロボール",
+          "usage_count": 9
+        }
+      ],
+      "dex_id": 681,
+      "fast_moves": [
+        {
+          "move_id": 406,
+          "move_type": "psychic",
+          "name": "サイコカッター",
+          "usage_count": 13
+        }
+      ],
+      "form_id": 0,
+      "rank": 21,
+      "species": "ギルガルド(シールド)",
+      "usage_count": 274,
+      "usage_pct": 1.6915668601061857
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 344,
+          "move_type": "fairy",
+          "name": "ムーンフォース",
+          "usage_count": 8
+        },
+        {
+          "move_id": 440,
+          "move_type": "rock",
+          "name": "いわなだれ",
+          "usage_count": 7
+        },
+        {
+          "move_id": 393,
+          "move_type": "rock",
+          "name": "パワージェム",
+          "usage_count": 5
+        }
+      ],
+      "dex_id": 703,
+      "fast_moves": [
+        {
+          "move_id": 442,
+          "move_type": "rock",
+          "name": "いわおとし",
+          "usage_count": 18
+        },
+        {
+          "move_id": 549,
+          "move_type": "normal",
+          "name": "たいあたり",
+          "usage_count": 1
+        }
+      ],
+      "form_id": 0,
+      "rank": 22,
+      "species": "メレシー",
+      "usage_count": 274,
+      "usage_pct": 1.6915668601061857
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 196,
+          "move_type": "dark",
+          "name": "イカサマ",
+          "usage_count": 13
+        },
+        {
+          "move_id": 537,
+          "move_type": "fighting",
+          "name": "ばかぢから",
+          "usage_count": 11
+        }
+      ],
+      "dex_id": 687,
+      "fast_moves": [
+        {
+          "move_id": 410,
+          "move_type": "psychic",
+          "name": "サイコウェーブ",
+          "usage_count": 18
+        }
+      ],
+      "form_id": 0,
+      "rank": 23,
+      "species": "カラマネロ",
+      "usage_count": 262,
+      "usage_pct": 1.6174836399555501
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 565,
+          "move_type": "electric",
+          "name": "かみなりパンチ",
+          "usage_count": 13
+        },
+        {
+          "move_id": 42,
+          "move_type": "fire",
+          "name": "ブラストバーン",
+          "usage_count": 12
+        }
+      ],
+      "dex_id": 157,
+      "fast_moves": [
+        {
+          "move_id": 277,
+          "move_type": "fire",
+          "name": "やきつくす",
+          "usage_count": 20
+        },
+        {
+          "move_id": 469,
+          "move_type": "ghost",
+          "name": "シャドークロー",
+          "usage_count": 1
+        }
+      ],
+      "form_id": 0,
+      "rank": 24,
+      "species": "バクフーン",
+      "usage_count": 252,
+      "usage_pct": 1.5557476231633534
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 660,
+          "move_type": "ghost",
+          "name": "ふんどのこぶし",
+          "usage_count": 27
+        },
+        {
+          "move_id": 271,
+          "move_type": "ice",
+          "name": "れいとうパンチ",
+          "usage_count": 10
+        },
+        {
+          "move_id": 77,
+          "move_type": "fighting",
+          "name": "インファイト",
+          "usage_count": 7
+        },
+        {
+          "move_id": 468,
+          "move_type": "ghost",
+          "name": "シャドーボール",
+          "usage_count": 3
+        },
+        {
+          "move_id": 359,
+          "move_type": "dark",
+          "name": "つじぎり",
+          "usage_count": 1
+        },
+        {
+          "move_id": 306,
+          "move_type": "fighting",
+          "name": "ローキック",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 979,
+      "fast_moves": [
+        {
+          "move_id": 305,
+          "move_type": "fighting",
+          "name": "けたぐり",
+          "usage_count": 23
+        },
+        {
+          "move_id": 90,
+          "move_type": "fighting",
+          "name": "カウンター",
+          "usage_count": 17
+        }
+      ],
+      "form_id": 0,
+      "rank": 25,
+      "species": "コノヨザル",
+      "usage_count": 247,
+      "usage_pct": 1.5248796147672552
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 137,
+          "move_type": "fighting",
+          "name": "ばくれつパンチ",
+          "usage_count": 9
+        },
+        {
+          "move_id": 468,
+          "move_type": "ghost",
+          "name": "シャドーボール",
+          "usage_count": 9
+        }
+      ],
+      "dex_id": 326,
+      "fast_moves": [
+        {
+          "move_id": 410,
+          "move_type": "psychic",
+          "name": "サイコウェーブ",
+          "usage_count": 12
+        }
+      ],
+      "form_id": 0,
+      "rank": 26,
+      "species": "ブーピッグ",
+      "usage_count": 240,
+      "usage_pct": 1.4816644030127175
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 47,
+          "move_type": "normal",
+          "name": "のしかかり",
+          "usage_count": 16
+        },
+        {
+          "move_id": 597,
+          "move_type": "water",
+          "name": "みずのはどう",
+          "usage_count": 11
+        },
+        {
+          "move_id": 138,
+          "move_type": "ground",
+          "name": "だいちのちから",
+          "usage_count": 10
+        }
+      ],
+      "dex_id": 423,
+      "fast_moves": [
+        {
+          "move_id": 350,
+          "move_type": "ground",
+          "name": "どろかけ",
+          "usage_count": 27
+        }
+      ],
+      "form_id": 0,
+      "rank": 27,
+      "species": "トリトドン",
+      "usage_count": 230,
+      "usage_pct": 1.419928386220521
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 658,
+          "move_type": "electric",
+          "name": "オーラぐるま(でんき)",
+          "usage_count": 15
+        },
+        {
+          "move_id": 632,
+          "move_type": "psychic",
+          "name": "サイコファング",
+          "usage_count": 14
+        },
+        {
+          "move_id": 464,
+          "move_type": "grass",
+          "name": "タネばくだん",
+          "usage_count": 4
+        }
+      ],
+      "dex_id": 877,
+      "fast_moves": [
+        {
+          "move_id": 566,
+          "move_type": "electric",
+          "name": "でんきショック",
+          "usage_count": 22
+        },
+        {
+          "move_id": 70,
+          "move_type": "electric",
+          "name": "チャージビーム",
+          "usage_count": 2
+        }
+      ],
+      "form_id": 0,
+      "rank": 28,
+      "species": "モルペコ(まんぷく)",
+      "usage_count": 214,
+      "usage_pct": 1.3211507593530065
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 671,
+          "move_type": "water",
+          "name": "ひやみず",
+          "usage_count": 26
+        },
+        {
+          "move_id": 647,
+          "move_type": "grass",
+          "name": "くさわけ",
+          "usage_count": 20
+        },
+        {
+          "move_id": 112,
+          "move_type": "fairy",
+          "name": "チャームボイス",
+          "usage_count": 5
+        },
+        {
+          "move_id": 344,
+          "move_type": "fairy",
+          "name": "ムーンフォース",
+          "usage_count": 3
+        }
+      ],
+      "dex_id": 671,
+      "fast_moves": [
+        {
+          "move_id": 160,
+          "move_type": "fairy",
+          "name": "ようせいのかぜ",
+          "usage_count": 33
+        },
+        {
+          "move_id": 590,
+          "move_type": "grass",
+          "name": "つるのムチ",
+          "usage_count": 1
+        }
+      ],
+      "form_id": 0,
+      "rank": 29,
+      "species": "フラージェス",
+      "usage_count": 210,
+      "usage_pct": 1.296456352636128
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 11,
+          "move_type": "flying",
+          "name": "エアカッター",
+          "usage_count": 15
+        },
+        {
+          "move_id": 374,
+          "move_type": "dark",
+          "name": "しっぺがえし",
+          "usage_count": 13
+        },
+        {
+          "move_id": 283,
+          "move_type": "steel",
+          "name": "アイアンヘッド",
+          "usage_count": 6
+        }
+      ],
+      "dex_id": 823,
+      "fast_moves": [
+        {
+          "move_id": 454,
+          "move_type": "ground",
+          "name": "すなかけ",
+          "usage_count": 21
+        },
+        {
+          "move_id": 12,
+          "move_type": "flying",
+          "name": "エアスラッシュ",
+          "usage_count": 1
+        }
+      ],
+      "form_id": 0,
+      "rank": 30,
+      "species": "アーマーガア",
+      "usage_count": 200,
+      "usage_pct": 1.2347203358439314
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 135,
+          "move_type": "ground",
+          "name": "ドリルライナー",
+          "usage_count": 10
+        },
+        {
+          "move_id": 440,
+          "move_type": "rock",
+          "name": "いわなだれ",
+          "usage_count": 7
+        },
+        {
+          "move_id": 110,
+          "move_type": "ground",
+          "name": "あなをほる",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 206,
+      "fast_moves": [
+        {
+          "move_id": 447,
+          "move_type": "rock",
+          "name": "ころがる",
+          "usage_count": 11
+        },
+        {
+          "move_id": 24,
+          "move_type": "ghost",
+          "name": "おどろかす",
+          "usage_count": 3
+        }
+      ],
+      "form_id": 0,
+      "rank": 31,
+      "species": "ノコッチ",
+      "usage_count": 197,
+      "usage_pct": 1.2161995308062723
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 49,
+          "move_type": "ground",
+          "name": "ホネこんぼう",
+          "usage_count": 7
+        },
+        {
+          "move_id": 440,
+          "move_type": "rock",
+          "name": "いわなだれ",
+          "usage_count": 4
+        }
+      ],
+      "dex_id": 105,
+      "fast_moves": [
+        {
+          "move_id": 350,
+          "move_type": "ground",
+          "name": "どろかけ",
+          "usage_count": 11
+        }
+      ],
+      "form_id": 0,
+      "rank": 32,
+      "species": "ガラガラ",
+      "usage_count": 188,
+      "usage_pct": 1.1606371156932955
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 358,
+          "move_type": "ghost",
+          "name": "ナイトヘッド",
+          "usage_count": 16
+        },
+        {
+          "move_id": 393,
+          "move_type": "rock",
+          "name": "パワージェム",
+          "usage_count": 14
+        },
+        {
+          "move_id": 437,
+          "move_type": "rock",
+          "name": "ロックブラスト",
+          "usage_count": 2
+        }
+      ],
+      "dex_id": 222,
+      "fast_moves": [
+        {
+          "move_id": 24,
+          "move_type": "ghost",
+          "name": "おどろかす",
+          "usage_count": 21
+        }
+      ],
+      "form_id": 1,
+      "rank": 33,
+      "species": "サニーゴ(ガラル)",
+      "usage_count": 168,
+      "usage_pct": 1.0371650821089022
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 259,
+          "move_type": "water",
+          "name": "ハイドロカノン",
+          "usage_count": 9
+        },
+        {
+          "move_id": 493,
+          "move_type": "poison",
+          "name": "ヘドロこうげき",
+          "usage_count": 6
+        },
+        {
+          "move_id": 139,
+          "move_type": "ground",
+          "name": "じしん",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 260,
+      "fast_moves": [
+        {
+          "move_id": 348,
+          "move_type": "ground",
+          "name": "マッドショット",
+          "usage_count": 13
+        }
+      ],
+      "form_id": 0,
+      "rank": 34,
+      "species": "ラグラージ",
+      "usage_count": 166,
+      "usage_pct": 1.024817878750463
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 359,
+          "move_type": "dark",
+          "name": "つじぎり",
+          "usage_count": 11
+        },
+        {
+          "move_id": 259,
+          "move_type": "water",
+          "name": "ハイドロカノン",
+          "usage_count": 11
+        }
+      ],
+      "dex_id": 658,
+      "fast_moves": [
+        {
+          "move_id": 598,
+          "move_type": "water",
+          "name": "みずしゅりけん",
+          "usage_count": 15
+        },
+        {
+          "move_id": 57,
+          "move_type": "water",
+          "name": "あわ",
+          "usage_count": 1
+        }
+      ],
+      "form_id": 0,
+      "rank": 35,
+      "species": "ゲッコウガ",
+      "usage_count": 161,
+      "usage_pct": 0.9939498703543647
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 637,
+          "move_type": "dark",
+          "name": "ぶんまわす",
+          "usage_count": 9
+        },
+        {
+          "move_id": 494,
+          "move_type": "poison",
+          "name": "ヘドロばくだん",
+          "usage_count": 6
+        },
+        {
+          "move_id": 96,
+          "move_type": "dark",
+          "name": "かみくだく",
+          "usage_count": 2
+        }
+      ],
+      "dex_id": 799,
+      "fast_moves": [
+        {
+          "move_id": 130,
+          "move_type": "dragon",
+          "name": "ドラゴンテール",
+          "usage_count": 14
+        },
+        {
+          "move_id": 500,
+          "move_type": "dark",
+          "name": "バークアウト",
+          "usage_count": 1
+        }
+      ],
+      "form_id": 0,
+      "rank": 36,
+      "species": "アクジキング",
+      "usage_count": 158,
+      "usage_pct": 0.9754290653167057
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 359,
+          "move_type": "dark",
+          "name": "つじぎり",
+          "usage_count": 5
+        },
+        {
+          "move_id": 77,
+          "move_type": "fighting",
+          "name": "インファイト",
+          "usage_count": 4
+        }
+      ],
+      "dex_id": 675,
+      "fast_moves": [
+        {
+          "move_id": 287,
+          "move_type": "fighting",
+          "name": "からてチョップ",
+          "usage_count": 9
+        }
+      ],
+      "form_id": 0,
+      "rank": 37,
+      "species": "ゴロンダ",
+      "usage_count": 155,
+      "usage_pct": 0.9569082602790469
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 468,
+          "move_type": "ghost",
+          "name": "シャドーボール",
+          "usage_count": 9
+        },
+        {
+          "move_id": 662,
+          "move_type": "fire",
+          "name": "フレアソング",
+          "usage_count": 9
+        },
+        {
+          "move_id": 112,
+          "move_type": "fairy",
+          "name": "チャームボイス",
+          "usage_count": 3
+        },
+        {
+          "move_id": 96,
+          "move_type": "dark",
+          "name": "かみくだく",
+          "usage_count": 1
+        },
+        {
+          "move_id": 42,
+          "move_type": "fire",
+          "name": "ブラストバーン",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 911,
+      "fast_moves": [
+        {
+          "move_id": 277,
+          "move_type": "fire",
+          "name": "やきつくす",
+          "usage_count": 17
+        },
+        {
+          "move_id": 248,
+          "move_type": "ghost",
+          "name": "たたりめ",
+          "usage_count": 1
+        }
+      ],
+      "form_id": 0,
+      "rank": 38,
+      "species": "ラウドボーン",
+      "usage_count": 148,
+      "usage_pct": 0.9136930485245092
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 471,
+          "move_type": "ghost",
+          "name": "シャドーパンチ",
+          "usage_count": 9
+        },
+        {
+          "move_id": 137,
+          "move_type": "fighting",
+          "name": "ばくれつパンチ",
+          "usage_count": 8
+        },
+        {
+          "move_id": 404,
+          "move_type": "psychic",
+          "name": "サイコキネシス",
+          "usage_count": 1
+        },
+        {
+          "move_id": 468,
+          "move_type": "ghost",
+          "name": "シャドーボール",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 477,
+      "fast_moves": [
+        {
+          "move_id": 24,
+          "move_type": "ghost",
+          "name": "おどろかす",
+          "usage_count": 12
+        },
+        {
+          "move_id": 248,
+          "move_type": "ghost",
+          "name": "たたりめ",
+          "usage_count": 3
+        }
+      ],
+      "form_id": 0,
+      "rank": 39,
+      "species": "ヨノワール",
+      "usage_count": 144,
+      "usage_pct": 0.8889986418076306
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 294,
+          "move_type": "grass",
+          "name": "リーフブレード",
+          "usage_count": 8
+        },
+        {
+          "move_id": 440,
+          "move_type": "rock",
+          "name": "いわなだれ",
+          "usage_count": 7
+        },
+        {
+          "move_id": 55,
+          "move_type": "fighting",
+          "name": "かわらわり",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 673,
+      "fast_moves": [
+        {
+          "move_id": 590,
+          "move_type": "grass",
+          "name": "つるのムチ",
+          "usage_count": 12
+        }
+      ],
+      "form_id": 0,
+      "rank": 40,
+      "species": "ゴーゴート",
+      "usage_count": 135,
+      "usage_pct": 0.8334362266946538
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 139,
+          "move_type": "ground",
+          "name": "じしん",
+          "usage_count": 17
+        },
+        {
+          "move_id": 524,
+          "move_type": "rock",
+          "name": "ストーンエッジ",
+          "usage_count": 12
+        },
+        {
+          "move_id": 494,
+          "move_type": "poison",
+          "name": "ヘドロばくだん",
+          "usage_count": 8
+        },
+        {
+          "move_id": 326,
+          "move_type": "bug",
+          "name": "メガホーン",
+          "usage_count": 2
+        },
+        {
+          "move_id": 597,
+          "move_type": "water",
+          "name": "みずのはどう",
+          "usage_count": 1
+        },
+        {
+          "move_id": 4,
+          "move_type": "poison",
+          "name": "アシッドボム",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 980,
+      "fast_moves": [
+        {
+          "move_id": 388,
+          "move_type": "poison",
+          "name": "どくばり",
+          "usage_count": 23
+        },
+        {
+          "move_id": 348,
+          "move_type": "ground",
+          "name": "マッドショット",
+          "usage_count": 4
+        }
+      ],
+      "form_id": 0,
+      "rank": 41,
+      "species": "ドオー",
+      "usage_count": 135,
+      "usage_pct": 0.8334362266946538
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 180,
+          "move_type": "fire",
+          "name": "かえんほうしゃ",
+          "usage_count": 7
+        },
+        {
+          "move_id": 524,
+          "move_type": "rock",
+          "name": "ストーンエッジ",
+          "usage_count": 7
+        },
+        {
+          "move_id": 183,
+          "move_type": "steel",
+          "name": "ラスターカノン",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 411,
+      "fast_moves": [
+        {
+          "move_id": 496,
+          "move_type": "rock",
+          "name": "うちおとす",
+          "usage_count": 14
+        }
+      ],
+      "form_id": 0,
+      "rank": 42,
+      "species": "トリデプス",
+      "usage_count": 131,
+      "usage_pct": 0.8087418199777751
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 672,
+          "move_type": "flying",
+          "name": "くちばしキャノン",
+          "usage_count": 6
+        },
+        {
+          "move_id": 134,
+          "move_type": "flying",
+          "name": "ドリルくちばし",
+          "usage_count": 5
+        },
+        {
+          "move_id": 437,
+          "move_type": "rock",
+          "name": "ロックブラスト",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 733,
+      "fast_moves": [
+        {
+          "move_id": 375,
+          "move_type": "flying",
+          "name": "つつく",
+          "usage_count": 10
+        },
+        {
+          "move_id": 64,
+          "move_type": "grass",
+          "name": "タネマシンガン",
+          "usage_count": 1
+        }
+      ],
+      "form_id": 0,
+      "rank": 43,
+      "species": "ドデカバシ",
+      "usage_count": 130,
+      "usage_pct": 0.8025682182985553
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 18,
+          "move_type": "water",
+          "name": "アクアテール",
+          "usage_count": 12
+        },
+        {
+          "move_id": 96,
+          "move_type": "dark",
+          "name": "かみくだく",
+          "usage_count": 11
+        },
+        {
+          "move_id": 167,
+          "move_type": "bug",
+          "name": "とどめばり",
+          "usage_count": 2
+        },
+        {
+          "move_id": 494,
+          "move_type": "poison",
+          "name": "ヘドロばくだん",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 452,
+      "fast_moves": [
+        {
+          "move_id": 388,
+          "move_type": "poison",
+          "name": "どくばり",
+          "usage_count": 17
+        },
+        {
+          "move_id": 41,
+          "move_type": "dark",
+          "name": "かみつく",
+          "usage_count": 2
+        },
+        {
+          "move_id": 270,
+          "move_type": "ice",
+          "name": "こおりのキバ",
+          "usage_count": 2
+        }
+      ],
+      "form_id": 0,
+      "rank": 44,
+      "species": "ドラピオン",
+      "usage_count": 128,
+      "usage_pct": 0.7902210149401161
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 384,
+          "move_type": "poison",
+          "name": "どくどくのキバ",
+          "usage_count": 6
+        },
+        {
+          "move_id": 96,
+          "move_type": "dark",
+          "name": "かみくだく",
+          "usage_count": 4
+        }
+      ],
+      "dex_id": 262,
+      "fast_moves": [
+        {
+          "move_id": 534,
+          "move_type": "dark",
+          "name": "ふいうち",
+          "usage_count": 10
+        }
+      ],
+      "form_id": 0,
+      "rank": 45,
+      "species": "グラエナ",
+      "usage_count": 119,
+      "usage_pct": 0.7346585998271392
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 271,
+          "move_type": "ice",
+          "name": "れいとうパンチ",
+          "usage_count": 7
+        },
+        {
+          "move_id": 135,
+          "move_type": "ground",
+          "name": "ドリルライナー",
+          "usage_count": 3
+        }
+      ],
+      "dex_id": 28,
+      "fast_moves": [
+        {
+          "move_id": 392,
+          "move_type": "ice",
+          "name": "こなゆき",
+          "usage_count": 10
+        },
+        {
+          "move_id": 469,
+          "move_type": "ghost",
+          "name": "シャドークロー",
+          "usage_count": 2
+        }
+      ],
+      "form_id": 1,
+      "rank": 46,
+      "species": "サンドパン(アローラ)",
+      "usage_count": 118,
+      "usage_pct": 0.7284849981479196
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 187,
+          "move_type": "flying",
+          "name": "そらをとぶ",
+          "usage_count": 13
+        },
+        {
+          "move_id": 54,
+          "move_type": "flying",
+          "name": "ブレイブバード",
+          "usage_count": 8
+        },
+        {
+          "move_id": 374,
+          "move_type": "dark",
+          "name": "しっぺがえし",
+          "usage_count": 5
+        },
+        {
+          "move_id": 15,
+          "move_type": "rock",
+          "name": "げんしのちから",
+          "usage_count": 2
+        }
+      ],
+      "dex_id": 146,
+      "fast_moves": [
+        {
+          "move_id": 534,
+          "move_type": "dark",
+          "name": "ふいうち",
+          "usage_count": 19
+        },
+        {
+          "move_id": 608,
+          "move_type": "flying",
+          "name": "つばさでうつ",
+          "usage_count": 2
+        }
+      ],
+      "form_id": 1,
+      "rank": 47,
+      "species": "ファイヤー(ガラル)",
+      "usage_count": 115,
+      "usage_pct": 0.7099641931102605
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 647,
+          "move_type": "grass",
+          "name": "くさわけ",
+          "usage_count": 12
+        },
+        {
+          "move_id": 637,
+          "move_type": "dark",
+          "name": "ぶんまわす",
+          "usage_count": 9
+        },
+        {
+          "move_id": 565,
+          "move_type": "electric",
+          "name": "かみなりパンチ",
+          "usage_count": 5
+        },
+        {
+          "move_id": 189,
+          "move_type": "fighting",
+          "name": "きあいだま",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 181,
+      "fast_moves": [
+        {
+          "move_id": 592,
+          "move_type": "electric",
+          "name": "ボルトチェンジ",
+          "usage_count": 20
+        },
+        {
+          "move_id": 70,
+          "move_type": "electric",
+          "name": "チャージビーム",
+          "usage_count": 1
+        }
+      ],
+      "form_id": 0,
+      "rank": 48,
+      "species": "デンリュウ",
+      "usage_count": 115,
+      "usage_pct": 0.7099641931102605
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 47,
+          "move_type": "normal",
+          "name": "のしかかり",
+          "usage_count": 7
+        },
+        {
+          "move_id": 539,
+          "move_type": "water",
+          "name": "なみのり",
+          "usage_count": 4
+        },
+        {
+          "move_id": 597,
+          "move_type": "water",
+          "name": "みずのはどう",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 364,
+      "fast_moves": [
+        {
+          "move_id": 392,
+          "move_type": "ice",
+          "name": "こなゆき",
+          "usage_count": 11
+        }
+      ],
+      "form_id": 0,
+      "rank": 49,
+      "species": "トドグラー",
+      "usage_count": 104,
+      "usage_pct": 0.6420545746388443
+    },
+    {
+      "charged_moves": [
+        {
+          "move_id": 623,
+          "move_type": "fire",
+          "name": "ウェザーボール(ほのお)",
+          "usage_count": 8
+        },
+        {
+          "move_id": 152,
+          "move_type": "grass",
+          "name": "エナジーボール",
+          "usage_count": 3
+        },
+        {
+          "move_id": 369,
+          "move_type": "fire",
+          "name": "オーバーヒート",
+          "usage_count": 2
+        },
+        {
+          "move_id": 245,
+          "move_type": "fire",
+          "name": "ねっぷう",
+          "usage_count": 1
+        }
+      ],
+      "dex_id": 38,
+      "fast_moves": [
+        {
+          "move_id": 148,
+          "move_type": "fire",
+          "name": "ひのこ",
+          "usage_count": 10
+        },
+        {
+          "move_id": 174,
+          "move_type": "fire",
+          "name": "ほのおのうず",
+          "usage_count": 1
+        }
+      ],
+      "form_id": 0,
+      "rank": 50,
+      "species": "キュウコン",
+      "usage_count": 103,
+      "usage_pct": 0.6358809729596246
+    }
+  ],
+  "rating_bracket": "upper",
+  "schema_version": 1,
+  "season": 27,
+  "source_caveat": "Taiman Party is a report-density-weighted upper-bracket meta feed. Sample density drops sharply past the upper bracket — top-500-specific slices are NOT reliable and must be interpreted as crowd-trend, not ground-truth top-rank usage.",
+  "source_url": "https://pokemongo-get.com/wp-content/themes/simplicity2-child/ajax/battlelog_240822/battleparty/BattlePvpRecommendNewVue.php?season=27&league=0&between=1&pokemon_first=0&search_type=0&ary_search=%2C%2C&en_flg=false",
+  "team_usage": [
+    {
+      "member_forms": [
+        0,
+        0,
+        0
+      ],
+      "members": [
+        "ゴロンダ",
+        "デカヌチャン",
+        "ブーピッグ"
+      ],
+      "rank": 1,
+      "usage_count": 32,
+      "usage_pct": 5.498281786941581
+    },
+    {
+      "member_forms": [
+        1,
+        0,
+        0
+      ],
+      "members": [
+        "フォレトス",
+        "オーダイル",
+        "メレシー"
+      ],
+      "rank": 2,
+      "usage_count": 29,
+      "usage_pct": 4.982817869415808
+    },
+    {
+      "member_forms": [
+        0,
+        0,
+        0
+      ],
+      "members": [
+        "プクリン",
+        "オオタチ",
+        "ホルード"
+      ],
+      "rank": 2,
+      "usage_count": 29,
+      "usage_pct": 4.982817869415808
+    },
+    {
+      "member_forms": [
+        0,
+        0,
+        1
+      ],
+      "members": [
+        "チルタリス",
+        "エンペルト",
+        "デンリュウ"
+      ],
+      "rank": 4,
+      "usage_count": 25,
+      "usage_pct": 4.29553264604811
+    },
+    {
+      "member_forms": [
+        0,
+        0,
+        0
+      ],
+      "members": [
+        "マッギョ",
+        "オニシズクモ",
+        "フォレトス"
+      ],
+      "rank": 5,
+      "usage_count": 24,
+      "usage_pct": 4.123711340206185
+    },
+    {
+      "member_forms": [
+        0,
+        0,
+        0
+      ],
+      "members": [
+        "デカヌチャン",
+        "オーダイル",
+        "ブルンゲル"
+      ],
+      "rank": 6,
+      "usage_count": 23,
+      "usage_pct": 3.951890034364261
+    },
+    {
+      "member_forms": [
+        0,
+        0,
+        0
+      ],
+      "members": [
+        "ゴロンダ",
+        "ギルガルド(シールド)",
+        "ブーピッグ"
+      ],
+      "rank": 7,
+      "usage_count": 22,
+      "usage_pct": 3.7800687285223367
+    },
+    {
+      "member_forms": [
+        0,
+        0,
+        0
+      ],
+      "members": [
+        "デカヌチャン",
+        "オオタチ",
+        "マスカーニャ"
+      ],
+      "rank": 7,
+      "usage_count": 22,
+      "usage_pct": 3.7800687285223367
+    },
+    {
+      "member_forms": [
+        0,
+        0,
+        0
+      ],
+      "members": [
+        "トゲキッス",
+        "ベロベルト",
+        "ホルード"
+      ],
+      "rank": 9,
+      "usage_count": 21,
+      "usage_pct": 3.608247422680412
+    },
+    {
+      "member_forms": [
+        0,
+        1,
+        0
+      ],
+      "members": [
+        "トゲキッス",
+        "ヌオー",
+        "ベロベルト"
+      ],
+      "rank": 9,
+      "usage_count": 21,
+      "usage_pct": 3.608247422680412
+    },
+    {
+      "member_forms": [
+        0,
+        0,
+        0
+      ],
+      "members": [
+        "アクジキング",
+        "デカヌチャン",
+        "デンヂムシ"
+      ],
+      "rank": 9,
+      "usage_count": 21,
+      "usage_pct": 3.608247422680412
+    },
+    {
+      "member_forms": [
+        0,
+        0,
+        0
+      ],
+      "members": [
+        "トゲキッス",
+        "ヌオー",
+        "ベロベルト"
+      ],
+      "rank": 12,
+      "usage_count": 20,
+      "usage_pct": 3.436426116838488
+    },
+    {
+      "member_forms": [
+        0,
+        0,
+        0
+      ],
+      "members": [
+        "プクリン",
+        "ベロベルト",
+        "ホルード"
+      ],
+      "rank": 12,
+      "usage_count": 20,
+      "usage_pct": 3.436426116838488
+    },
+    {
+      "member_forms": [
+        1,
+        0,
+        0
+      ],
+      "members": [
+        "ヌオー",
+        "オニドリル",
+        "ベロベルト"
+      ],
+      "rank": 14,
+      "usage_count": 19,
+      "usage_pct": 3.264604810996564
+    },
+    {
+      "member_forms": [
+        0,
+        0,
+        0
+      ],
+      "members": [
+        "マッギョ",
+        "オニシズクモ",
+        "オニドリル"
+      ],
+      "rank": 14,
+      "usage_count": 19,
+      "usage_pct": 3.264604810996564
+    },
+    {
+      "member_forms": [
+        1,
+        1,
+        0
+      ],
+      "members": [
+        "グラエナ",
+        "ハガネール",
+        "プクリン"
+      ],
+      "rank": 14,
+      "usage_count": 19,
+      "usage_pct": 3.264604810996564
+    },
+    {
+      "member_forms": [
+        0,
+        0,
+        0
+      ],
+      "members": [
+        "チルタリス",
+        "エンペルト",
+        "キュウコン"
+      ],
+      "rank": 14,
+      "usage_count": 19,
+      "usage_pct": 3.264604810996564
+    },
+    {
+      "member_forms": [
+        0,
+        1,
+        0
+      ],
+      "members": [
+        "デカヌチャン",
+        "オーダイル",
+        "ブルンゲル"
+      ],
+      "rank": 14,
+      "usage_count": 19,
+      "usage_pct": 3.264604810996564
+    },
+    {
+      "member_forms": [
+        0,
+        0,
+        0
+      ],
+      "members": [
+        "ユレイドル",
+        "デンヂムシ",
+        "トリトドン"
+      ],
+      "rank": 19,
+      "usage_count": 18,
+      "usage_pct": 3.0927835051546393
+    },
+    {
+      "member_forms": [
+        0,
+        0,
+        0
+      ],
+      "members": [
+        "チルタリス",
+        "エンペルト",
+        "デカヌチャン"
+      ],
+      "rank": 20,
+      "usage_count": 16,
+      "usage_pct": 2.7491408934707904
+    },
+    {
+      "member_forms": [
+        1,
+        1,
+        0
+      ],
+      "members": [
+        "ガラガラ",
+        "フォレトス",
+        "メレシー"
+      ],
+      "rank": 20,
+      "usage_count": 16,
+      "usage_pct": 2.7491408934707904
+    },
+    {
+      "member_forms": [
+        0,
+        0,
+        1
+      ],
+      "members": [
+        "エンペルト",
+        "カラマネロ",
+        "ヌオー"
+      ],
+      "rank": 20,
+      "usage_count": 16,
+      "usage_pct": 2.7491408934707904
+    },
+    {
+      "member_forms": [
+        0,
+        0,
+        0
+      ],
+      "members": [
+        "ホルード",
+        "トゲキッス",
+        "プクリン"
+      ],
+      "rank": 20,
+      "usage_count": 16,
+      "usage_pct": 2.7491408934707904
+    },
+    {
+      "member_forms": [
+        0,
+        0,
+        0
+      ],
+      "members": [
+        "チルタリス",
+        "エンペルト",
+        "フォレトス"
+      ],
+      "rank": 24,
+      "usage_count": 14,
+      "usage_pct": 2.405498281786942
+    },
+    {
+      "member_forms": [
+        1,
+        0,
+        0
+      ],
+      "members": [
+        "ファイアロー",
+        "ゴーゴート",
+        "ベロベルト"
+      ],
+      "rank": 24,
+      "usage_count": 14,
+      "usage_pct": 2.405498281786942
+    },
+    {
+      "member_forms": [
+        0,
+        1,
+        0
+      ],
+      "members": [
+        "オニドリル",
+        "ヌオー",
+        "ベロベルト"
+      ],
+      "rank": 24,
+      "usage_count": 14,
+      "usage_pct": 2.405498281786942
+    },
+    {
+      "member_forms": [
+        0,
+        0,
+        1
+      ],
+      "members": [
+        "カラマネロ",
+        "ギルガルド(シールド)",
+        "バクフーン"
+      ],
+      "rank": 24,
+      "usage_count": 14,
+      "usage_pct": 2.405498281786942
+    },
+    {
+      "member_forms": [
+        0,
+        0,
+        0
+      ],
+      "members": [
+        "サンドパン(アローラ)",
+        "オーダイル",
+        "ブルンゲル"
+      ],
+      "rank": 24,
+      "usage_count": 14,
+      "usage_pct": 2.405498281786942
+    },
+    {
+      "member_forms": [
+        0,
+        0,
+        0
+      ],
+      "members": [
+        "フォレトス",
+        "オーダイル",
+        "メレシー"
+      ],
+      "rank": 29,
+      "usage_count": 13,
+      "usage_pct": 2.2336769759450172
+    },
+    {
+      "member_forms": [
+        0,
+        0,
+        1
+      ],
+      "members": [
+        "デカヌチャン",
+        "オオタチ",
+        "コノヨザル"
+      ],
+      "rank": 29,
+      "usage_count": 13,
+      "usage_pct": 2.2336769759450172
+    }
+  ]
+}
