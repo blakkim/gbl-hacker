@@ -1,0 +1,139 @@
+[
+  {
+    "i": 0,
+    "id": "",
+    "classes": "table sp-table-list table-text-center mt-0 mb-0 font-s9",
+    "header": [
+      "スーパーリーグ",
+      "ハイパーリーグ",
+      "ハイパーリーグプレミアカップ",
+      "マスターリーグ",
+      "マスターリーグプレミアカップ",
+      "マスターリーグクラシック",
+      "リトルカップ",
+      "ひこうカップ"
+    ],
+    "rowCount": 57,
+    "sample": "<tr><th width=\"20%\"> <img src=\"https://pokemongo-get.com/wp-content/themes/simplicity2-child/images/battlelog/league/0.png\" alt=\"\" width=\"40\" height=\"40\" class=\"aligncenter size-full wp-image-118931\"> スーパーリーグ</th><td width=\"80%\"><div align=\"left\"><ul><li>CP制限：1500</li></ul></div></td></tr>"
+  },
+  {
+    "i": 1,
+    "id": "",
+    "classes": "table table-text-center selected-table sp-table-list table-party-type mt-0 mb-0",
+    "header": [],
+    "rowCount": 1,
+    "sample": "<tr><td class=\"\">1</td><td class=\"\">2</td><td class=\"\">3</td><td class=\"\">4</td><td class=\"\">5</td><td class=\"\">6</td><td class=\"\">7</td><td class=\"\">8</td><td class=\"\">9</td><td class=\"\">10</td><td class=\"\">11</td><td class=\"\">12</td></tr>"
+  },
+  {
+    "i": 2,
+    "id": "",
+    "classes": "table table-text-center selected-table sp-table-list table-party-type mt-0 mb-10",
+    "header": [],
+    "rowCount": 1,
+    "sample": "<tr><td class=\"\">13</td><td class=\"\">14</td><td class=\"\">15</td><td class=\"\">16</td><td class=\"\">17</td><td class=\"\">18</td><td class=\"\">19</td><td class=\"\">20</td><td class=\"\">21</td><td class=\"\">22</td><td class=\"\">23</td><td class=\"\">24</td></tr>"
+  },
+  {
+    "i": 3,
+    "id": "",
+    "classes": "table selected-table selected-arrow w100 bold text-center mt-0 mb-10 font-s8s",
+    "header": [],
+    "rowCount": 1,
+    "sample": "<tr><td class=\"selected\">直近の集計</td><td class=\"\">全ての集計</td><td class=\"\">リアルタイム</td></tr>"
+  },
+  {
+    "i": 4,
+    "id": "",
+    "classes": "table selected-table selected-arrow w100 bold text-center mt-0 mb-5 font-s8s",
+    "header": [],
+    "rowCount": 1,
+    "sample": "<tr><td class=\"selected\">パーティで検索</td><td class=\"\">ポケモンで検索</td></tr>"
+  },
+  {
+    "i": 5,
+    "id": "",
+    "classes": "table sp-table-list table-text-center fixed-table font-s8",
+    "header": [
+      "GBL / PvP関連ツール"
+    ],
+    "rowCount": 7,
+    "sample": "<tr><th colspan=\"3\">GBL / PvP関連ツール</th></tr>"
+  },
+  {
+    "i": 6,
+    "id": "",
+    "classes": "table sp-table-list table-text-center fixed-table font-s8",
+    "header": [
+      "トレーナーバトルフレンド募集掲示板"
+    ],
+    "rowCount": 2,
+    "sample": "<tr><th colspan=\"3\">トレーナーバトルフレンド募集掲示板</th></tr>"
+  },
+  {
+    "i": 7,
+    "id": "",
+    "classes": "table table-text-center",
+    "header": [
+      "運営者"
+    ],
+    "rowCount": 3,
+    "sample": "<tr><th>運営者</th></tr>"
+  },
+  {
+    "i": 8,
+    "id": "",
+    "classes": "table table-star mt-5 mb-5 font-s14px pdel fixed-table",
+    "header": [
+      "ジム攻撃",
+      "ジム防衛",
+      "レイド適性",
+      "PvP適性"
+    ],
+    "rowCount": 4,
+    "sample": "<tr><th>ジム攻撃</th><td class=\"star\">★★★★<span class=\"gray\">★</span> <span class=\"black\">4</span></td></tr>"
+  },
+  {
+    "i": 9,
+    "id": "",
+    "classes": "table table-star mt-5 mb-5 font-s14px pdel fixed-table",
+    "header": [
+      "ジム攻撃",
+      "ジム防衛",
+      "レイド適性",
+      "PvP適性"
+    ],
+    "rowCount": 4,
+    "sample": "<tr><th>ジム攻撃</th><td class=\"star\">★★★<span class=\"gray\">★</span><span class=\"gray\">★</span> <span class=\"black\">3</span></td></tr>"
+  },
+  {
+    "i": 10,
+    "id": "",
+    "classes": "table table-star mt-5 mb-5 font-s14px pdel fixed-table",
+    "header": [
+      "レイド適性"
+    ],
+    "rowCount": 1,
+    "sample": "<tr><th>レイド適性</th><td class=\"star\">★<span class=\"gray\">★</span><span class=\"gray\">★</span><span class=\"gray\">★</span><span class=\"gray\">★</span> <span class=\"black\">1</span></td></tr>"
+  },
+  {
+    "i": 11,
+    "id": "",
+    "classes": "table table-star mt-5 mb-5 font-s14px pdel fixed-table",
+    "header": [
+      "ジム攻撃",
+      "ジム防衛",
+      "レイド適性"
+    ],
+    "rowCount": 3,
+    "sample": "<tr><th>ジム攻撃</th><td class=\"star\">★<span class=\"gray\">★</span><span class=\"gray\">★</span><span class=\"gray\">★</span><span class=\"gray\">★</span> <span class=\"black\">1</span></td></tr>"
+  },
+  {
+    "i": 12,
+    "id": "",
+    "classes": "table table-star mt-5 mb-5 font-s14px pdel fixed-table",
+    "header": [
+      "PvP適性"
+    ],
+    "rowCount": 1,
+    "sample": "<tr><th>PvP適性</th><td class=\"star\">★★★★<span class=\"gray\">★</span> <span class=\"black\">4</span></td></tr>"
+  }
+]

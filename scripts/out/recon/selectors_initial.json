@@ -1,0 +1,187 @@
+{
+  "title": "【ポケモンGO】人気のバトルパーティ検索【GOバトルリーグ】",
+  "all_selects": [
+    {
+      "i": 0,
+      "name": "season",
+      "id": "",
+      "outerHTML": "<select name=\"season\"><option value=\"2\">2</option><option value=\"3\">3</option><option value=\"4\">4</option><option value=\"5\">5</option><option value=\"6\">6</option><option value=\"7\">7</option><option value=\"8\">8</option><option value=\"9\">9</option><option value=\"10\">10</option><option value=\"12\">11</option><option value=\"13\">12</option><option value=\"14\">13</option><option value=\"15\">14</option><opt",
+      "options": [
+        {
+          "value": "2",
+          "text": "2"
+        },
+        {
+          "value": "3",
+          "text": "3"
+        },
+        {
+          "value": "4",
+          "text": "4"
+        },
+        {
+          "value": "5",
+          "text": "5"
+        },
+        {
+          "value": "6",
+          "text": "6"
+        },
+        {
+          "value": "7",
+          "text": "7"
+        },
+        {
+          "value": "8",
+          "text": "8"
+        },
+        {
+          "value": "9",
+          "text": "9"
+        },
+        {
+          "value": "10",
+          "text": "10"
+        },
+        {
+          "value": "12",
+          "text": "11"
+        },
+        {
+          "value": "13",
+          "text": "12"
+        },
+        {
+          "value": "14",
+          "text": "13"
+        },
+        {
+          "value": "15",
+          "text": "14"
+        },
+        {
+          "value": "16",
+          "text": "15"
+        },
+        {
+          "value": "17",
+          "text": "16"
+        },
+        {
+          "value": "18",
+          "text": "17"
+        },
+        {
+          "value": "19",
+          "text": "18"
+        },
+        {
+          "value": "20",
+          "text": "19"
+        },
+        {
+          "value": "21",
+          "text": "20"
+        },
+        {
+          "value": "22",
+          "text": "21"
+        },
+        {
+          "value": "23",
+          "text": "22"
+        },
+        {
+          "value": "24",
+          "text": "23"
+        },
+        {
+          "value": "25",
+          "text": "24"
+        },
+        {
+          "value": "26",
+          "text": "25"
+        },
+        {
+          "value": "27",
+          "text": "26"
+        }
+      ]
+    }
+  ],
+  "buttons": [
+    {
+      "i": 0,
+      "tag": "INPUT",
+      "text": "検索",
+      "id": "",
+      "classes": "w100"
+    },
+    {
+      "i": 1,
+      "tag": "BUTTON",
+      "text": "最新情報・話題の情報",
+      "id": "",
+      "classes": "text-center w100 mb-0 mt-0 btn-showhide btn-tcode font-s10"
+    },
+    {
+      "i": 2,
+      "tag": "BUTTON",
+      "text": "仕様について",
+      "id": "",
+      "classes": "text-center w100 mt-0 mb-0 btn-showhide font-s10 bold"
+    },
+    {
+      "i": 3,
+      "tag": "BUTTON",
+      "text": "各リーグ／カップの詳細",
+      "id": "",
+      "classes": "text-center w100 mb-0 mt-10 btn-showhide btn-tcode font-s10"
+    },
+    {
+      "i": 4,
+      "tag": "BUTTON",
+      "text": "スーパーリーグ",
+      "id": "",
+      "classes": "w100 bold font-s10"
+    }
+  ],
+  "checkboxes": [
+    {
+      "i": 0,
+      "name": "mynavi",
+      "value": "on",
+      "id": "mynavi1",
+      "label": ""
+    },
+    {
+      "i": 1,
+      "name": "mynavi",
+      "value": "on",
+      "id": "mynavi2",
+      "label": ""
+    },
+    {
+      "i": 2,
+      "name": "mynavi",
+      "value": "on",
+      "id": "mynavi3",
+      "label": ""
+    },
+    {
+      "i": 3,
+      "name": "mynavi",
+      "value": "on",
+      "id": "mynavi4",
+      "label": ""
+    },
+    {
+      "i": 4,
+      "name": "mynavi",
+      "value": "on",
+      "id": "mynavi5",
+      "label": ""
+    }
+  ]
+}

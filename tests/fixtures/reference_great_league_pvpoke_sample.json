@@ -1,0 +1,72 @@
+{
+  "source": "pvpoke_meta_v1",
+  "source_url": "https://pvpoke.com/team-builder/all/1500",
+  "league": "great_league",
+  "captured_at": "2026-05-13T00:00:00Z",
+  "notes": "Recorded fixture mirroring a PvPoke Great League meta sample. Used by the engine's overlap check; not ground-truth top-500.",
+  "teams": [
+    {
+      "name": "Azu / Anni / Registeel core",
+      "source_label": "pvpoke_meta",
+      "members": [
+        {
+          "species": "Azumarill",
+          "fast_move": "Bubble",
+          "charge_moves": ["Ice Beam", "Play Rough"]
+        },
+        {
+          "species": "Annihilape",
+          "fast_move": "Counter",
+          "charge_moves": ["Rage Fist", "Ice Punch"]
+        },
+        {
+          "species": "Registeel",
+          "fast_move": "Lock-On",
+          "charge_moves": ["Focus Blast", "Zap Cannon"]
+        }
+      ]
+    },
+    {
+      "name": "Shadow Medicham bully",
+      "source_label": "pvpoke_meta",
+      "members": [
+        {
+          "species": "Medicham (Shadow)",
+          "fast_move": "Counter",
+          "charge_moves": ["Power-Up Punch", "Ice Punch"]
+        },
+        {
+          "species": "Lickitung (Shadow)",
+          "fast_move": "Lick",
+          "charge_moves": ["Body Slam", "Power Whip"]
+        },
+        {
+          "species": "Azumarill",
+          "fast_move": "Bubble",
+          "charge_moves": ["Ice Beam", "Play Rough"]
+        }
+      ]
+    },
+    {
+      "name": "Galarian Stunfisk wall",
+      "source_label": "streamer:abr",
+      "members": [
+        {
+          "species": "Galarian Stunfisk",
+          "fast_move": "Mud Shot",
+          "charge_moves": ["Rock Slide", "Earthquake"]
+        },
+        {
+          "species": "Azumarill",
+          "fast_move": "Bubble",
+          "charge_moves": ["Ice Beam", "Play Rough"]
+        },
+        {
+          "species": "Annihilape",
+          "fast_move": "Counter",
+          "charge_moves": ["Rage Fist", "Ice Punch"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+# GBL Hacker v0.1 — Seed Specification
+# Generated 2026-05-13 from Path B (plugin fallback) interview synthesis
+# Source: 13Q interview + 2 corrections + Restate (corrected pass)
+
+goal: >
+  v0.1 GBL Hacker — a personal CLI engine for climbing Great League rating.
+  Ingest Taiman Party's report-density-reliable upper-bracket meta on manual
+  refresh, evaluate 3-slot team candidates through a set-state-aware
+  simulator that models entry energy ≠ 0, asymmetric shield counts, and
+  mid-matchup switches with energy carry, and output a Pareto-ranked
+  recommendation table with per-team rationale cards scored on expected
+  win rate, worst-case robustness, and meta coverage.
+
+constraints:
+  - Python >= 3.12 (already wired via uv in this directory)
+  - League scope is Great League (1500 CP cap) only for v0.1
+  - 3v3 GBL format — exactly 3 Pokémon per team
+  - All Pokémon assumed available (no roster/IV ingestion pipeline in v0.1)
+  - Data refresh from Taiman Party is manual-trigger only (no scheduled scraping)
+  - Set-state simulator must model entry energy != 0, asymmetric shield states
+    across the 0/1/2 × 0/1/2 grid, and mid-matchup switches with energy carry
+  - Taiman Party data is treated as report-density-weighted upper-bracket meta,
+    NOT ground-truth top-500 — this caveat must be surfaced in engine output
+  - No in-battle live advice, screen detection, or anything touching the Niantic
+    client (ToS)
+  - No roster/IV evidence collection (PokeGenie/screenshot OCR/IV calc engine)
+    in v0.1
+  - No support for Ultra/Master/event cups in v0.1
+  - Engine analytical correctness outranks UI polish — CLI is acceptable; web
+    dashboard is a v0.2+ goal, not a v0.1 blocker
+
+acceptance_criteria:
+  - User can run a CLI command that fetches a fresh Taiman Party Great League
+    meta snapshot and persists it locally
+  - Engine produces a Pareto-ranked list of K candidate 3-Pokémon teams over
+    the metrics (expected_win_rate, worst_case_robustness, meta_coverage)
+  - Each recommended team has an attached rationale card listing key
+    favorable matchups, key unfavorable matchups, and the slice of current
+    meta it covers
+  - >-
+    Set-state simulator passes unit tests on canonical scenarios that PvPoke's
+    isolated-matchup simulator gets wrong — at minimum:
+    (a) entry-energy carry-over across a switch,
+    (b) 1-shield vs 2-shield asymmetric matchup,
+    (c) mid-matchup forced switch with partial energy preservation
+  - Recommendation list shows non-trivial overlap with at least one
+    independent top-tier reference (PvPoke meta team list, a known top
+    streamer's published lineup, or similar)
+  - The data-quality caveat about Taiman Party report density is visible in
+    every meta snapshot output (not hidden behind a flag)
+  - User can run a recommended team in actual GBL and report rating change
+    back to the engine for the long-loop validation log
+
+ontology_schema:
+  name: GBLHacker
+  description: >
+    Domain model for Great League team recommendation with set-state-aware
+    matchup simulation over a crowdsourced meta feed.
+  fields:
+    - name: league
+      type: string
+      description: "Currently fixed to 'great_league' (1500 CP cap)"
+    - name: meta_snapshot
+      type: object
+      description: >
+        Taiman Party fetch result — team-level usage rates, Pokémon-level
+        usage rates, bracket label, fetch timestamp, source caveat string.
+    - name: pokemon_build
+      type: object
+      description: >
+        Concrete Pokémon entry: species, fast_move, charged_move_1,
+        charged_move_2, ivs, level, cp (assumed optimal under league cap
+        since roster is unconstrained in v0.1).
+    - name: candidate_team
+      type: object
+      description: >
+        Ordered 3-slot lineup (lead, safe_swap, closer) of pokemon_build.
+    - name: set_state
+      type: object
+      description: >
+        Live state machine snapshot for one side mid-set — for each of 3
+        slots: alive flag, current HP, current energy, shields remaining,
+        on_field flag. Mirrors on the opposing side.
+    - name: matchup_result
+      type: object
+      description: >
+        Outcome of a single matchup played from a given pair of set_state
+        slices — including switch sequence, shield decisions, terminal
+        HP/energy of both sides.
+    - name: set_simulation
+      type: object
+      description: >
+        Full 3v3 set result composed of matchup_result transitions, with
+        the assumed switch/shield policy stated explicitly.
+    - name: score
+      type: object
+      description: >
+        Multi-metric scorecard for a candidate team:
+        expected_win_rate, worst_case_robustness, meta_coverage.
+    - name: pareto_frontier
+      type: array
+      description: >
+        Sorted list of candidate_team + score entries on the Pareto front
+        across the score dimensions.
+    - name: rationale_card
+      type: object
+      description: >
+        Per-team explanation: key favorable matchups, key unfavorable
+        matchups, meta_coverage breakdown, and a short prose justification.
+
+evaluation_principles:
+  - name: simulator_fidelity
+    description: >
+      Simulator faithfully models set-state dynamics that PvPoke's isolated
+      matchup model misses — entry energy, asymmetric shields, mid-switch
+      energy carry, forced/surprise switches.
+    weight: 0.30
+  - name: meta_coverage
+    description: >
+      Recommended teams demonstrably handle the current Taiman Party
+      top-trending opponent teams across the league/bracket.
+    weight: 0.20
+  - name: pareto_correctness
+    description: >
+      Output spans the Pareto frontier across expected win rate,
+      worst-case robustness, and meta coverage — not collapsed onto a
+      single metric.
+    weight: 0.15
+  - name: interpretability
+    description: >
+      Each recommendation includes a rationale card that persuades a
+      top-rank player (does not read as a black-box ranking).
+    weight: 0.15
+  - name: data_honesty
+    description: >
+      Data-quality limits of the Taiman Party feed (report density drop
+      past upper bracket) are surfaced in output, not hidden.
+    weight: 0.10
+  - name: engine_first
+    description: >
+      Engine analytical correctness is preferred over UI polish — favor
+      depth in computation when trading off.
+    weight: 0.10
+
+exit_conditions:
+  - name: v0_1_ready
+    description: >
+      All acceptance criteria pass on a current Great League Taiman Party
+      snapshot; simulator unit tests pass on the canonical state-divergent
+      scenarios; output includes rationale cards with the data-honesty
+      caveat surfaced.
+    criteria: >
+      acceptance_criteria all green AND simulator_unit_tests green AND
+      data_honesty_caveat present in every meta_snapshot rendering
+  - name: scope_drift_halt
+    description: >
+      Stop and revisit scope if work begins to bleed into in-battle
+      features, roster/IV ingestion, or leagues/cups beyond Great League.
+    criteria: >
+      any code touching screen capture, OCR, IV inference, Ultra/Master
+      simulation, or live-battle hooks requires explicit re-interview
+  - name: long_loop_validation
+    description: >
+      User has run at least one recommended team in actual GBL and
+      reported the resulting rating change back to the engine log.
+    criteria: >
+      rating_change_log entries >= 1 AND user_acceptance_signal recorded
+
+brownfield_context:
+  project_type: greenfield
+  context_references:
+    - path: https://pokemongo-get.com/taimanparty
+      role: reference
+      summary: >
+        Crowdsourced GBL meta feed. League- and rating-bracket-filterable
+        team and Pokémon usage rates. Report density drops past upper
+        bracket — top-500-specific slices are NOT reliable.
+    - path: https://pvpoke.com
+      role: reference
+      summary: >
+        Reference simulator and meta tool. Atom-level matchup logic
+        (damage formulas, energy gain, move decision heuristics) may be
+        ported. The set-state machine on top is this project's novelty
+        and must be built fresh.
+  existing_patterns: []
+  existing_dependencies:
+    - Python 3.12 (via uv 0.11.x — see ~/.claude/projects/.../memory/setup_2026_05_13.md)
+    - uv as the package/runtime manager (no pipx, no global ouroboros binary)
+
+# Residuals to pin during execution (moved out of metadata for schema compliance):
+#   - Taiman Party rating-bracket cutoff (where report density becomes too
+#     thin) — to be determined by reading the data
+#   - K (the number of recommended teams in the Pareto output) — default
+#     proposal 5; final value to be set during execution
+#   - Switch/shield policy assumed by the simulator (e.g., PvPoke's greedy
+#     heuristic vs perfect play) — to be pinned during execution
+# Origin: path_b_plugin_fallback interview synthesis on 2026-05-13.
+
+metadata:
+  version: "1.0.0"
+  ambiguity_score: 0.15

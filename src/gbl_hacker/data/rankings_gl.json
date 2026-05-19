@@ -1,0 +1,2002 @@
+[
+  {
+    "speciesId": "lickilicky",
+    "score": 94,
+    "rating": 650,
+    "moveset": [
+      "ROLLOUT",
+      "BODY_SLAM",
+      "SHADOW_BALL"
+    ]
+  },
+  {
+    "speciesId": "quagsire",
+    "score": 92.6,
+    "rating": 645,
+    "moveset": [
+      "MUD_SHOT",
+      "AQUA_TAIL",
+      "MUD_BOMB"
+    ]
+  },
+  {
+    "speciesId": "quagsire_shadow",
+    "score": 92.6,
+    "rating": 659,
+    "moveset": [
+      "MUD_SHOT",
+      "AQUA_TAIL",
+      "MUD_BOMB"
+    ]
+  },
+  {
+    "speciesId": "feraligatr",
+    "score": 92.5,
+    "rating": 646,
+    "moveset": [
+      "SHADOW_CLAW",
+      "HYDRO_CANNON",
+      "ICE_BEAM"
+    ]
+  },
+  {
+    "speciesId": "jellicent",
+    "score": 92.4,
+    "rating": 680,
+    "moveset": [
+      "HEX",
+      "SURF",
+      "SHADOW_BALL"
+    ]
+  },
+  {
+    "speciesId": "tinkaton",
+    "score": 92.4,
+    "rating": 729,
+    "moveset": [
+      "FAIRY_WIND",
+      "GIGATON_HAMMER",
+      "BULLDOZE"
+    ]
+  },
+  {
+    "speciesId": "corsola_galarian",
+    "score": 92.2,
+    "rating": 671,
+    "moveset": [
+      "ASTONISH",
+      "NIGHT_SHADE",
+      "POWER_GEM"
+    ]
+  },
+  {
+    "speciesId": "forretress",
+    "score": 92.2,
+    "rating": 649,
+    "moveset": [
+      "VOLT_SWITCH",
+      "SAND_TOMB",
+      "ROCK_TOMB"
+    ]
+  },
+  {
+    "speciesId": "feraligatr_shadow",
+    "score": 92.1,
+    "rating": 640,
+    "moveset": [
+      "SHADOW_CLAW",
+      "HYDRO_CANNON",
+      "ICE_BEAM"
+    ]
+  },
+  {
+    "speciesId": "altaria",
+    "score": 92,
+    "rating": 681,
+    "moveset": [
+      "DRAGON_BREATH",
+      "SKY_ATTACK",
+      "FLAMETHROWER"
+    ]
+  },
+  {
+    "speciesId": "empoleon",
+    "score": 91.9,
+    "rating": 681,
+    "moveset": [
+      "METAL_SOUND",
+      "HYDRO_CANNON",
+      "DRILL_PECK"
+    ]
+  },
+  {
+    "speciesId": "forretress_shadow",
+    "score": 91.9,
+    "rating": 651,
+    "moveset": [
+      "VOLT_SWITCH",
+      "SAND_TOMB",
+      "ROCK_TOMB"
+    ]
+  },
+  {
+    "speciesId": "azumarill",
+    "score": 91.7,
+    "rating": 614,
+    "moveset": [
+      "BUBBLE",
+      "ICE_BEAM",
+      "PLAY_ROUGH"
+    ]
+  },
+  {
+    "speciesId": "altaria_shadow",
+    "score": 91.6,
+    "rating": 657,
+    "moveset": [
+      "DRAGON_BREATH",
+      "SKY_ATTACK",
+      "FLAMETHROWER"
+    ]
+  },
+  {
+    "speciesId": "wigglytuff",
+    "score": 91.6,
+    "rating": 644,
+    "moveset": [
+      "CHARM",
+      "ICY_WIND",
+      "SWIFT"
+    ]
+  },
+  {
+    "speciesId": "empoleon_shadow",
+    "score": 91.5,
+    "rating": 671,
+    "moveset": [
+      "METAL_SOUND",
+      "HYDRO_CANNON",
+      "DRILL_PECK"
+    ]
+  },
+  {
+    "speciesId": "stunfisk",
+    "score": 91.5,
+    "rating": 639,
+    "moveset": [
+      "THUNDER_SHOCK",
+      "MUD_BOMB",
+      "DISCHARGE"
+    ]
+  },
+  {
+    "speciesId": "corviknight",
+    "score": 91.4,
+    "rating": 715,
+    "moveset": [
+      "SAND_ATTACK",
+      "AIR_CUTTER",
+      "PAYBACK"
+    ]
+  },
+  {
+    "speciesId": "greedent",
+    "score": 91,
+    "rating": 617,
+    "moveset": [
+      "MUD_SHOT",
+      "BODY_SLAM",
+      "TRAILBLAZE"
+    ]
+  },
+  {
+    "speciesId": "medicham",
+    "score": 90.9,
+    "rating": 690,
+    "moveset": [
+      "PSYCHO_CUT",
+      "ICE_PUNCH",
+      "DYNAMIC_PUNCH"
+    ]
+  },
+  {
+    "speciesId": "talonflame",
+    "score": 90.7,
+    "rating": 597,
+    "moveset": [
+      "INCINERATE",
+      "FLY",
+      "BRAVE_BIRD"
+    ]
+  },
+  {
+    "speciesId": "malamar",
+    "score": 90.6,
+    "rating": 716,
+    "moveset": [
+      "PSYWAVE",
+      "SUPER_POWER",
+      "FOUL_PLAY"
+    ]
+  },
+  {
+    "speciesId": "oranguru",
+    "score": 90.6,
+    "rating": 669,
+    "moveset": [
+      "CONFUSION",
+      "BRUTAL_SWING",
+      "TRAILBLAZE"
+    ]
+  },
+  {
+    "speciesId": "lapras",
+    "score": 90.4,
+    "rating": 674,
+    "moveset": [
+      "PSYWAVE",
+      "SPARKLING_ARIA",
+      "ICE_BEAM"
+    ]
+  },
+  {
+    "speciesId": "sableye_shadow",
+    "score": 90.4,
+    "rating": 680,
+    "moveset": [
+      "SHADOW_CLAW",
+      "FOUL_PLAY",
+      "POWER_GEM"
+    ]
+  },
+  {
+    "speciesId": "sealeo",
+    "score": 90.4,
+    "rating": 696,
+    "moveset": [
+      "POWDER_SNOW",
+      "SURF",
+      "BODY_SLAM"
+    ]
+  },
+  {
+    "speciesId": "sealeo_shadow",
+    "score": 90.3,
+    "rating": 715,
+    "moveset": [
+      "POWDER_SNOW",
+      "SURF",
+      "BODY_SLAM"
+    ]
+  },
+  {
+    "speciesId": "castform_sunny",
+    "score": 90.2,
+    "rating": 653,
+    "moveset": [
+      "EMBER",
+      "WEATHER_BALL_FIRE",
+      "SOLAR_BEAM"
+    ]
+  },
+  {
+    "speciesId": "dusclops",
+    "score": 90.2,
+    "rating": 649,
+    "moveset": [
+      "HEX",
+      "ICE_PUNCH",
+      "SHADOW_PUNCH"
+    ]
+  },
+  {
+    "speciesId": "ninetales",
+    "score": 90.2,
+    "rating": 711,
+    "moveset": [
+      "EMBER",
+      "WEATHER_BALL_FIRE",
+      "OVERHEAT"
+    ]
+  },
+  {
+    "speciesId": "annihilape",
+    "score": 90.1,
+    "rating": 719,
+    "moveset": [
+      "LOW_KICK",
+      "RAGE_FIST",
+      "CLOSE_COMBAT"
+    ]
+  },
+  {
+    "speciesId": "clodsire",
+    "score": 90.1,
+    "rating": 663,
+    "moveset": [
+      "POISON_STING",
+      "EARTHQUAKE",
+      "STONE_EDGE"
+    ]
+  },
+  {
+    "speciesId": "guzzlord",
+    "score": 90.1,
+    "rating": 681,
+    "moveset": [
+      "DRAGON_TAIL",
+      "BRUTAL_SWING",
+      "SLUDGE_BOMB"
+    ]
+  },
+  {
+    "speciesId": "blastoise",
+    "score": 90,
+    "rating": 625,
+    "moveset": [
+      "ROLLOUT",
+      "HYDRO_CANNON",
+      "SKULL_BASH"
+    ]
+  },
+  {
+    "speciesId": "clefable",
+    "score": 90,
+    "rating": 675,
+    "moveset": [
+      "FAIRY_WIND",
+      "MOONBLAST",
+      "METEOR_MASH"
+    ]
+  },
+  {
+    "speciesId": "drapion_shadow",
+    "score": 90,
+    "rating": 694,
+    "moveset": [
+      "POISON_STING",
+      "CRUNCH",
+      "AQUA_TAIL"
+    ]
+  },
+  {
+    "speciesId": "charjabug",
+    "score": 89.9,
+    "rating": 642,
+    "moveset": [
+      "VOLT_SWITCH",
+      "X_SCISSOR",
+      "DISCHARGE"
+    ]
+  },
+  {
+    "speciesId": "sableye",
+    "score": 89.9,
+    "rating": 680,
+    "moveset": [
+      "SHADOW_CLAW",
+      "FOUL_PLAY",
+      "POWER_GEM"
+    ]
+  },
+  {
+    "speciesId": "talonflame_shadow",
+    "score": 89.9,
+    "rating": 597,
+    "moveset": [
+      "INCINERATE",
+      "FLAME_CHARGE",
+      "FLY"
+    ]
+  },
+  {
+    "speciesId": "cradily",
+    "score": 89.8,
+    "rating": 648,
+    "moveset": [
+      "ACID",
+      "ROCK_TOMB",
+      "GRASS_KNOT"
+    ]
+  },
+  {
+    "speciesId": "florges",
+    "score": 89.8,
+    "rating": 648,
+    "moveset": [
+      "FAIRY_WIND",
+      "CHILLING_WATER",
+      "DISARMING_VOICE"
+    ]
+  },
+  {
+    "speciesId": "lapras_shadow",
+    "score": 89.8,
+    "rating": 643,
+    "moveset": [
+      "PSYWAVE",
+      "SPARKLING_ARIA",
+      "ICE_BEAM"
+    ]
+  },
+  {
+    "speciesId": "aegislash_shield",
+    "score": 89.7,
+    "rating": 675,
+    "moveset": [
+      "AEGISLASH_CHARGE_PSYCHO_CUT",
+      "SHADOW_BALL",
+      "GYRO_BALL"
+    ]
+  },
+  {
+    "speciesId": "dunsparce",
+    "score": 89.7,
+    "rating": 633,
+    "moveset": [
+      "ROLLOUT",
+      "DRILL_RUN",
+      "ROCK_SLIDE"
+    ]
+  },
+  {
+    "speciesId": "dusclops_shadow",
+    "score": 89.7,
+    "rating": 661,
+    "moveset": [
+      "HEX",
+      "ICE_PUNCH",
+      "SHADOW_PUNCH"
+    ]
+  },
+  {
+    "speciesId": "steelix_shadow",
+    "score": 89.7,
+    "rating": 635,
+    "moveset": [
+      "THUNDER_FANG",
+      "PSYCHIC_FANGS",
+      "CRUNCH"
+    ]
+  },
+  {
+    "speciesId": "dondozo",
+    "score": 89.6,
+    "rating": 612,
+    "moveset": [
+      "WATERFALL",
+      "SURF",
+      "OUTRAGE"
+    ]
+  },
+  {
+    "speciesId": "furret",
+    "score": 89.6,
+    "rating": 665,
+    "moveset": [
+      "SUCKER_PUNCH",
+      "SWIFT",
+      "TRAILBLAZE"
+    ]
+  },
+  {
+    "speciesId": "gastrodon",
+    "score": 89.6,
+    "rating": 635,
+    "moveset": [
+      "MUD_SLAP",
+      "BODY_SLAM",
+      "WATER_PULSE"
+    ]
+  },
+  {
+    "speciesId": "stunfisk_galarian",
+    "score": 89.6,
+    "rating": 665,
+    "moveset": [
+      "MUD_SHOT",
+      "ROCK_SLIDE",
+      "EARTHQUAKE"
+    ]
+  },
+  {
+    "speciesId": "dusknoir_shadow",
+    "score": 89.5,
+    "rating": 682,
+    "moveset": [
+      "ASTONISH",
+      "DYNAMIC_PUNCH",
+      "SHADOW_PUNCH"
+    ]
+  },
+  {
+    "speciesId": "shelgon",
+    "score": 89.5,
+    "rating": 689,
+    "moveset": [
+      "DRAGON_BREATH",
+      "TWISTER",
+      "FLAMETHROWER"
+    ]
+  },
+  {
+    "speciesId": "golisopod",
+    "score": 89.4,
+    "rating": 668,
+    "moveset": [
+      "FURY_CUTTER",
+      "X_SCISSOR",
+      "AQUA_JET"
+    ]
+  },
+  {
+    "speciesId": "moltres_galarian",
+    "score": 89.4,
+    "rating": 622,
+    "moveset": [
+      "SUCKER_PUNCH",
+      "FLY",
+      "BRAVE_BIRD"
+    ]
+  },
+  {
+    "speciesId": "oinkologne_female",
+    "score": 89.4,
+    "rating": 630,
+    "moveset": [
+      "MUD_SLAP",
+      "BODY_SLAM",
+      "TRAILBLAZE"
+    ]
+  },
+  {
+    "speciesId": "swampert",
+    "score": 89.4,
+    "rating": 655,
+    "moveset": [
+      "MUD_SHOT",
+      "HYDRO_CANNON",
+      "EARTHQUAKE"
+    ]
+  },
+  {
+    "speciesId": "swampert_shadow",
+    "score": 89.4,
+    "rating": 666,
+    "moveset": [
+      "MUD_SHOT",
+      "HYDRO_CANNON",
+      "EARTHQUAKE"
+    ]
+  },
+  {
+    "speciesId": "diggersby",
+    "score": 89.3,
+    "rating": 641,
+    "moveset": [
+      "MUD_SHOT",
+      "FIRE_PUNCH",
+      "SCORCHING_SANDS"
+    ]
+  },
+  {
+    "speciesId": "malamar_shadow",
+    "score": 89.3,
+    "rating": 693,
+    "moveset": [
+      "PSYWAVE",
+      "FOUL_PLAY",
+      "SUPER_POWER"
+    ]
+  },
+  {
+    "speciesId": "morpeko_full_belly",
+    "score": 89.3,
+    "rating": 686,
+    "moveset": [
+      "THUNDER_SHOCK",
+      "AURA_WHEEL_ELECTRIC",
+      "PSYCHIC_FANGS"
+    ]
+  },
+  {
+    "speciesId": "ninetales_alolan",
+    "score": 89.3,
+    "rating": 672,
+    "moveset": [
+      "POWDER_SNOW",
+      "WEATHER_BALL_ICE",
+      "CHILLING_WATER"
+    ]
+  },
+  {
+    "speciesId": "politoed_shadow",
+    "score": 89.3,
+    "rating": 668,
+    "moveset": [
+      "MUD_SHOT",
+      "WEATHER_BALL_WATER",
+      "ICE_BEAM"
+    ]
+  },
+  {
+    "speciesId": "charjabug_shadow",
+    "score": 89.2,
+    "rating": 652,
+    "moveset": [
+      "VOLT_SWITCH",
+      "X_SCISSOR",
+      "DISCHARGE"
+    ]
+  },
+  {
+    "speciesId": "marowak_shadow",
+    "score": 89.2,
+    "rating": 654,
+    "moveset": [
+      "MUD_SLAP",
+      "BONE_CLUB",
+      "ROCK_SLIDE"
+    ]
+  },
+  {
+    "speciesId": "dusknoir",
+    "score": 89.1,
+    "rating": 688,
+    "moveset": [
+      "ASTONISH",
+      "DYNAMIC_PUNCH",
+      "SHADOW_PUNCH"
+    ]
+  },
+  {
+    "speciesId": "milotic",
+    "score": 89.1,
+    "rating": 655,
+    "moveset": [
+      "WATERFALL",
+      "AQUA_TAIL",
+      "WRAP"
+    ]
+  },
+  {
+    "speciesId": "milotic_shadow",
+    "score": 89.1,
+    "rating": 662,
+    "moveset": [
+      "WATERFALL",
+      "AQUA_TAIL",
+      "WRAP"
+    ]
+  },
+  {
+    "speciesId": "ninetales_alolan_shadow",
+    "score": 89.1,
+    "rating": 676,
+    "moveset": [
+      "POWDER_SNOW",
+      "WEATHER_BALL_ICE",
+      "CHILLING_WATER"
+    ]
+  },
+  {
+    "speciesId": "seaking",
+    "score": 89.1,
+    "rating": 629,
+    "moveset": [
+      "PECK",
+      "DRILL_RUN",
+      "ICY_WIND"
+    ]
+  },
+  {
+    "speciesId": "mandibuzz",
+    "score": 89,
+    "rating": 653,
+    "moveset": [
+      "SNARL",
+      "FOUL_PLAY",
+      "SHADOW_BALL"
+    ]
+  },
+  {
+    "speciesId": "morgrem",
+    "score": 89,
+    "rating": 640,
+    "moveset": [
+      "SUCKER_PUNCH",
+      "FOUL_PLAY",
+      "PLAY_ROUGH"
+    ]
+  },
+  {
+    "speciesId": "gourgeist_large",
+    "score": 88.9,
+    "rating": 643,
+    "moveset": [
+      "INCINERATE",
+      "SHADOW_BALL",
+      "SEED_BOMB"
+    ]
+  },
+  {
+    "speciesId": "lumineon",
+    "score": 88.9,
+    "rating": 645,
+    "moveset": [
+      "WATERFALL",
+      "AQUA_TAIL",
+      "SILVER_WIND"
+    ]
+  },
+  {
+    "speciesId": "gourgeist_super",
+    "score": 88.8,
+    "rating": 643,
+    "moveset": [
+      "INCINERATE",
+      "SHADOW_BALL",
+      "SEED_BOMB"
+    ]
+  },
+  {
+    "speciesId": "grumpig",
+    "score": 88.8,
+    "rating": 679,
+    "moveset": [
+      "PSYWAVE",
+      "DYNAMIC_PUNCH",
+      "SHADOW_BALL"
+    ]
+  },
+  {
+    "speciesId": "bastiodon",
+    "score": 88.7,
+    "rating": 581,
+    "moveset": [
+      "SMACK_DOWN",
+      "STONE_EDGE",
+      "FLAMETHROWER"
+    ]
+  },
+  {
+    "speciesId": "gourgeist_average",
+    "score": 88.7,
+    "rating": 640,
+    "moveset": [
+      "INCINERATE",
+      "SHADOW_BALL",
+      "SEED_BOMB"
+    ]
+  },
+  {
+    "speciesId": "grumpig_shadow",
+    "score": 88.7,
+    "rating": 652,
+    "moveset": [
+      "PSYWAVE",
+      "DYNAMIC_PUNCH",
+      "SHADOW_BALL"
+    ]
+  },
+  {
+    "speciesId": "shelgon_shadow",
+    "score": 88.7,
+    "rating": 679,
+    "moveset": [
+      "DRAGON_BREATH",
+      "TWISTER",
+      "FLAMETHROWER"
+    ]
+  },
+  {
+    "speciesId": "hydreigon_shadow",
+    "score": 88.6,
+    "rating": 727,
+    "moveset": [
+      "DRAGON_BREATH",
+      "BRUTAL_SWING",
+      "FLY"
+    ]
+  },
+  {
+    "speciesId": "kingdra",
+    "score": 88.6,
+    "rating": 704,
+    "moveset": [
+      "DRAGON_BREATH",
+      "SWIFT",
+      "OUTRAGE"
+    ]
+  },
+  {
+    "speciesId": "noctowl",
+    "score": 88.6,
+    "rating": 606,
+    "moveset": [
+      "WING_ATTACK",
+      "SKY_ATTACK",
+      "SHADOW_BALL"
+    ]
+  },
+  {
+    "speciesId": "turtonator",
+    "score": 88.6,
+    "rating": 660,
+    "moveset": [
+      "INCINERATE",
+      "BRUTAL_SWING",
+      "DRAGON_CLAW"
+    ]
+  },
+  {
+    "speciesId": "umbreon",
+    "score": 88.6,
+    "rating": 633,
+    "moveset": [
+      "SNARL",
+      "FOUL_PLAY",
+      "LAST_RESORT"
+    ]
+  },
+  {
+    "speciesId": "bellibolt",
+    "score": 88.5,
+    "rating": 612,
+    "moveset": [
+      "THUNDER_SHOCK",
+      "ZAP_CANNON",
+      "PARABOLIC_CHARGE"
+    ]
+  },
+  {
+    "speciesId": "dragonair",
+    "score": 88.5,
+    "rating": 724,
+    "moveset": [
+      "DRAGON_BREATH",
+      "AQUA_TAIL",
+      "DRAGON_PULSE"
+    ]
+  },
+  {
+    "speciesId": "dragonair_shadow",
+    "score": 88.5,
+    "rating": 724,
+    "moveset": [
+      "DRAGON_BREATH",
+      "WRAP",
+      "AQUA_TAIL"
+    ]
+  },
+  {
+    "speciesId": "murkrow",
+    "score": 88.5,
+    "rating": 670,
+    "moveset": [
+      "PECK",
+      "DRILL_PECK",
+      "FOUL_PLAY"
+    ]
+  },
+  {
+    "speciesId": "samurott",
+    "score": 88.5,
+    "rating": 661,
+    "moveset": [
+      "FURY_CUTTER",
+      "HYDRO_CANNON",
+      "MEGAHORN"
+    ]
+  },
+  {
+    "speciesId": "sandslash_alolan",
+    "score": 88.5,
+    "rating": 669,
+    "moveset": [
+      "POWDER_SNOW",
+      "ICE_PUNCH",
+      "DRILL_RUN"
+    ]
+  },
+  {
+    "speciesId": "cresselia",
+    "score": 88.4,
+    "rating": 631,
+    "moveset": [
+      "PSYCHO_CUT",
+      "GRASS_KNOT",
+      "MOONBLAST"
+    ]
+  },
+  {
+    "speciesId": "lanturn",
+    "score": 88.4,
+    "rating": 581,
+    "moveset": [
+      "WATER_GUN",
+      "SURF",
+      "THUNDERBOLT"
+    ]
+  },
+  {
+    "speciesId": "primeape_shadow",
+    "score": 88.4,
+    "rating": 691,
+    "moveset": [
+      "KARATE_CHOP",
+      "RAGE_FIST",
+      "ICE_PUNCH"
+    ]
+  },
+  {
+    "speciesId": "scizor_shadow",
+    "score": 88.4,
+    "rating": 644,
+    "moveset": [
+      "BULLET_PUNCH",
+      "NIGHT_SLASH",
+      "TRAILBLAZE"
+    ]
+  },
+  {
+    "speciesId": "spidops",
+    "score": 88.4,
+    "rating": 632,
+    "moveset": [
+      "SHADOW_CLAW",
+      "LUNGE",
+      "ROCK_TOMB"
+    ]
+  },
+  {
+    "speciesId": "toucannon_shadow",
+    "score": 88.4,
+    "rating": 658,
+    "moveset": [
+      "PECK",
+      "BEAK_BLAST",
+      "DRILL_PECK"
+    ]
+  },
+  {
+    "speciesId": "doublade",
+    "score": 88.3,
+    "rating": 715,
+    "moveset": [
+      "SHADOW_CLAW",
+      "SACRED_SWORD",
+      "GYRO_BALL"
+    ]
+  },
+  {
+    "speciesId": "drapion",
+    "score": 88.3,
+    "rating": 657,
+    "moveset": [
+      "POISON_STING",
+      "CRUNCH",
+      "AQUA_TAIL"
+    ]
+  },
+  {
+    "speciesId": "gourgeist_small",
+    "score": 88.3,
+    "rating": 631,
+    "moveset": [
+      "INCINERATE",
+      "SHADOW_BALL",
+      "SEED_BOMB"
+    ]
+  },
+  {
+    "speciesId": "ninetales_shadow",
+    "score": 88.2,
+    "rating": 721,
+    "moveset": [
+      "EMBER",
+      "WEATHER_BALL_FIRE",
+      "OVERHEAT"
+    ]
+  },
+  {
+    "speciesId": "aurorus",
+    "score": 88.1,
+    "rating": 687,
+    "moveset": [
+      "POWDER_SNOW",
+      "WEATHER_BALL_ICE",
+      "METEOR_BEAM"
+    ]
+  },
+  {
+    "speciesId": "gligar_shadow",
+    "score": 88.1,
+    "rating": 699,
+    "moveset": [
+      "WING_ATTACK",
+      "NIGHT_SLASH",
+      "DIG"
+    ]
+  },
+  {
+    "speciesId": "miltank",
+    "score": 88.1,
+    "rating": 622,
+    "moveset": [
+      "ROLLOUT",
+      "BODY_SLAM",
+      "THUNDERBOLT"
+    ]
+  },
+  {
+    "speciesId": "swalot",
+    "score": 88.1,
+    "rating": 644,
+    "moveset": [
+      "MUD_SHOT",
+      "SLUDGE",
+      "ICE_BEAM"
+    ]
+  },
+  {
+    "speciesId": "weezing_galarian_shadow",
+    "score": 88.1,
+    "rating": 674,
+    "moveset": [
+      "FAIRY_WIND",
+      "SLUDGE",
+      "BRUTAL_SWING"
+    ]
+  },
+  {
+    "speciesId": "gligar",
+    "score": 88,
+    "rating": 676,
+    "moveset": [
+      "WING_ATTACK",
+      "NIGHT_SLASH",
+      "DIG"
+    ]
+  },
+  {
+    "speciesId": "hydreigon",
+    "score": 88,
+    "rating": 714,
+    "moveset": [
+      "DRAGON_BREATH",
+      "BRUTAL_SWING",
+      "FLY"
+    ]
+  },
+  {
+    "speciesId": "ludicolo",
+    "score": 88,
+    "rating": 637,
+    "moveset": [
+      "ASTONISH",
+      "WEATHER_BALL_WATER",
+      "LEAF_STORM"
+    ]
+  },
+  {
+    "speciesId": "pachirisu",
+    "score": 88,
+    "rating": 616,
+    "moveset": [
+      "VOLT_SWITCH",
+      "HYPER_FANG",
+      "THUNDER_PUNCH"
+    ]
+  },
+  {
+    "speciesId": "wormadam_trash",
+    "score": 88,
+    "rating": 620,
+    "moveset": [
+      "SUCKER_PUNCH",
+      "BUG_BUZZ",
+      "IRON_HEAD"
+    ]
+  },
+  {
+    "speciesId": "dewott_shadow",
+    "score": 87.9,
+    "rating": 673,
+    "moveset": [
+      "FURY_CUTTER",
+      "AQUA_TAIL",
+      "X_SCISSOR"
+    ]
+  },
+  {
+    "speciesId": "bronzong",
+    "score": 87.8,
+    "rating": 681,
+    "moveset": [
+      "CONFUSION",
+      "WEATHER_BALL_WATER",
+      "PAYBACK"
+    ]
+  },
+  {
+    "speciesId": "crustle",
+    "score": 87.8,
+    "rating": 677,
+    "moveset": [
+      "FURY_CUTTER",
+      "X_SCISSOR",
+      "ROCK_WRECKER"
+    ]
+  },
+  {
+    "speciesId": "samurott_shadow",
+    "score": 87.8,
+    "rating": 655,
+    "moveset": [
+      "FURY_CUTTER",
+      "HYDRO_CANNON",
+      "MEGAHORN"
+    ]
+  },
+  {
+    "speciesId": "toucannon",
+    "score": 87.8,
+    "rating": 666,
+    "moveset": [
+      "PECK",
+      "BEAK_BLAST",
+      "DRILL_PECK"
+    ]
+  },
+  {
+    "speciesId": "greninja_shadow",
+    "score": 87.7,
+    "rating": 680,
+    "moveset": [
+      "WATER_SHURIKEN",
+      "HYDRO_CANNON",
+      "NIGHT_SLASH"
+    ]
+  },
+  {
+    "speciesId": "pelipper",
+    "score": 87.7,
+    "rating": 673,
+    "moveset": [
+      "WING_ATTACK",
+      "WEATHER_BALL_WATER",
+      "HURRICANE"
+    ]
+  },
+  {
+    "speciesId": "politoed",
+    "score": 87.6,
+    "rating": 643,
+    "moveset": [
+      "MUD_SHOT",
+      "WEATHER_BALL_WATER",
+      "ICE_BEAM"
+    ]
+  },
+  {
+    "speciesId": "fearow",
+    "score": 87.5,
+    "rating": 668,
+    "moveset": [
+      "PECK",
+      "DRILL_PECK",
+      "DRILL_RUN"
+    ]
+  },
+  {
+    "speciesId": "togekiss",
+    "score": 87.5,
+    "rating": 686,
+    "moveset": [
+      "PECK",
+      "PSYSHOCK",
+      "AURA_SPHERE"
+    ]
+  },
+  {
+    "speciesId": "annihilape_shadow",
+    "score": 87.4,
+    "rating": 656,
+    "moveset": [
+      "COUNTER",
+      "RAGE_FIST",
+      "ICE_PUNCH"
+    ]
+  },
+  {
+    "speciesId": "emolga",
+    "score": 87.2,
+    "rating": 683,
+    "moveset": [
+      "THUNDER_SHOCK",
+      "ACROBATICS",
+      "DISCHARGE"
+    ]
+  },
+  {
+    "speciesId": "kingdra_shadow",
+    "score": 87.2,
+    "rating": 710,
+    "moveset": [
+      "DRAGON_BREATH",
+      "SWIFT",
+      "OUTRAGE"
+    ]
+  },
+  {
+    "speciesId": "primeape",
+    "score": 87.2,
+    "rating": 722,
+    "moveset": [
+      "KARATE_CHOP",
+      "RAGE_FIST",
+      "CLOSE_COMBAT"
+    ]
+  },
+  {
+    "speciesId": "blastoise_shadow",
+    "score": 87.1,
+    "rating": 617,
+    "moveset": [
+      "ROLLOUT",
+      "HYDRO_CANNON",
+      "SKULL_BASH"
+    ]
+  },
+  {
+    "speciesId": "crustle_shadow",
+    "score": 87.1,
+    "rating": 642,
+    "moveset": [
+      "FURY_CUTTER",
+      "X_SCISSOR",
+      "ROCK_WRECKER"
+    ]
+  },
+  {
+    "speciesId": "hakamo_o",
+    "score": 87.1,
+    "rating": 666,
+    "moveset": [
+      "DRAGON_TAIL",
+      "BRICK_BREAK",
+      "ROCK_TOMB"
+    ]
+  },
+  {
+    "speciesId": "thievul",
+    "score": 87.1,
+    "rating": 659,
+    "moveset": [
+      "SUCKER_PUNCH",
+      "NIGHT_SLASH",
+      "PLAY_ROUGH"
+    ]
+  },
+  {
+    "speciesId": "klefki",
+    "score": 87,
+    "rating": 623,
+    "moveset": [
+      "ASTONISH",
+      "FOUL_PLAY",
+      "PLAY_ROUGH"
+    ]
+  },
+  {
+    "speciesId": "weezing_galarian",
+    "score": 87,
+    "rating": 655,
+    "moveset": [
+      "FAIRY_WIND",
+      "SLUDGE",
+      "BRUTAL_SWING"
+    ]
+  },
+  {
+    "speciesId": "castform_rainy",
+    "score": 86.9,
+    "rating": 586,
+    "moveset": [
+      "WATER_GUN",
+      "WEATHER_BALL_WATER",
+      "THUNDER"
+    ]
+  },
+  {
+    "speciesId": "giratina_altered_shadow",
+    "score": 86.9,
+    "rating": 659,
+    "moveset": [
+      "DRAGON_BREATH",
+      "DRAGON_CLAW",
+      "SHADOW_SNEAK"
+    ]
+  },
+  {
+    "speciesId": "kommo_o",
+    "score": 86.9,
+    "rating": 659,
+    "moveset": [
+      "DRAGON_TAIL",
+      "CLANGING_SCALES",
+      "UPPER_HAND"
+    ]
+  },
+  {
+    "speciesId": "murkrow_shadow",
+    "score": 86.9,
+    "rating": 657,
+    "moveset": [
+      "PECK",
+      "DRILL_PECK",
+      "FOUL_PLAY"
+    ]
+  },
+  {
+    "speciesId": "sandslash_alolan_shadow",
+    "score": 86.9,
+    "rating": 663,
+    "moveset": [
+      "POWDER_SNOW",
+      "ICE_PUNCH",
+      "DRILL_RUN"
+    ]
+  },
+  {
+    "speciesId": "carbink",
+    "score": 86.8,
+    "rating": 632,
+    "moveset": [
+      "ROCK_THROW",
+      "ROCK_SLIDE",
+      "MOONBLAST"
+    ]
+  },
+  {
+    "speciesId": "gyarados",
+    "score": 86.8,
+    "rating": 676,
+    "moveset": [
+      "DRAGON_BREATH",
+      "AQUA_TAIL",
+      "TWISTER"
+    ]
+  },
+  {
+    "speciesId": "dewott",
+    "score": 86.7,
+    "rating": 651,
+    "moveset": [
+      "FURY_CUTTER",
+      "AQUA_TAIL",
+      "X_SCISSOR"
+    ]
+  },
+  {
+    "speciesId": "dragalge",
+    "score": 86.7,
+    "rating": 683,
+    "moveset": [
+      "ACID",
+      "AQUA_TAIL",
+      "OUTRAGE"
+    ]
+  },
+  {
+    "speciesId": "orthworm",
+    "score": 86.7,
+    "rating": 619,
+    "moveset": [
+      "MUD_SLAP",
+      "ROCK_TOMB",
+      "EARTHQUAKE"
+    ]
+  },
+  {
+    "speciesId": "diggersby_shadow",
+    "score": 86.6,
+    "rating": 645,
+    "moveset": [
+      "MUD_SHOT",
+      "SCORCHING_SANDS",
+      "FIRE_PUNCH"
+    ]
+  },
+  {
+    "speciesId": "pidgeot",
+    "score": 86.6,
+    "rating": 670,
+    "moveset": [
+      "WING_ATTACK",
+      "AIR_CUTTER",
+      "BRAVE_BIRD"
+    ]
+  },
+  {
+    "speciesId": "primarina",
+    "score": 86.6,
+    "rating": 620,
+    "moveset": [
+      "WATERFALL",
+      "DISARMING_VOICE",
+      "HYDRO_CANNON"
+    ]
+  },
+  {
+    "speciesId": "araquanid",
+    "score": 86.5,
+    "rating": 707,
+    "moveset": [
+      "BUG_BITE",
+      "WATER_PULSE",
+      "BUBBLE_BEAM"
+    ]
+  },
+  {
+    "speciesId": "raikou",
+    "score": 86.5,
+    "rating": 660,
+    "moveset": [
+      "THUNDER_SHOCK",
+      "WILD_CHARGE",
+      "AURA_SPHERE"
+    ]
+  },
+  {
+    "speciesId": "amoonguss",
+    "score": 86.4,
+    "rating": 607,
+    "moveset": [
+      "ASTONISH",
+      "GRASS_KNOT",
+      "FOUL_PLAY"
+    ]
+  },
+  {
+    "speciesId": "gyarados_shadow",
+    "score": 86.4,
+    "rating": 696,
+    "moveset": [
+      "DRAGON_BREATH",
+      "AQUA_TAIL",
+      "TWISTER"
+    ]
+  },
+  {
+    "speciesId": "melmetal",
+    "score": 86.4,
+    "rating": 659,
+    "moveset": [
+      "THUNDER_SHOCK",
+      "DOUBLE_IRON_BASH",
+      "SUPER_POWER"
+    ]
+  },
+  {
+    "speciesId": "regidrago",
+    "score": 86.4,
+    "rating": 718,
+    "moveset": [
+      "DRAGON_BREATH",
+      "DRAGON_ENERGY",
+      "VICE_GRIP"
+    ]
+  },
+  {
+    "speciesId": "goodra",
+    "score": 86.3,
+    "rating": 700,
+    "moveset": [
+      "DRAGON_BREATH",
+      "AQUA_TAIL",
+      "THUNDER_PUNCH"
+    ]
+  },
+  {
+    "speciesId": "machamp_shadow",
+    "score": 86.3,
+    "rating": 681,
+    "moveset": [
+      "KARATE_CHOP",
+      "CROSS_CHOP",
+      "ROCK_SLIDE"
+    ]
+  },
+  {
+    "speciesId": "spiritomb",
+    "score": 86.3,
+    "rating": 626,
+    "moveset": [
+      "SUCKER_PUNCH",
+      "ROCK_TOMB",
+      "SHADOW_BALL"
+    ]
+  },
+  {
+    "speciesId": "steelix",
+    "score": 86.3,
+    "rating": 643,
+    "moveset": [
+      "THUNDER_FANG",
+      "PSYCHIC_FANGS",
+      "CRUNCH"
+    ]
+  },
+  {
+    "speciesId": "walrein",
+    "score": 86.3,
+    "rating": 651,
+    "moveset": [
+      "POWDER_SNOW",
+      "ICICLE_SPEAR",
+      "EARTHQUAKE"
+    ]
+  },
+  {
+    "speciesId": "zweilous",
+    "score": 86.3,
+    "rating": 721,
+    "moveset": [
+      "DRAGON_BREATH",
+      "BODY_SLAM",
+      "DARK_PULSE"
+    ]
+  },
+  {
+    "speciesId": "cradily_b",
+    "score": 86.2,
+    "rating": 607,
+    "moveset": [
+      "BULLET_SEED",
+      "ROCK_TOMB",
+      "GRASS_KNOT"
+    ]
+  },
+  {
+    "speciesId": "dewgong",
+    "score": 86.2,
+    "rating": 611,
+    "moveset": [
+      "ICE_SHARD",
+      "ICY_WIND",
+      "DRILL_RUN"
+    ]
+  },
+  {
+    "speciesId": "dudunsparce",
+    "score": 86.2,
+    "rating": 612,
+    "moveset": [
+      "ROLLOUT",
+      "BODY_SLAM",
+      "DRILL_RUN"
+    ]
+  },
+  {
+    "speciesId": "gallade_shadow",
+    "score": 86.2,
+    "rating": 699,
+    "moveset": [
+      "PSYCHO_CUT",
+      "CLOSE_COMBAT",
+      "LEAF_BLADE"
+    ]
+  },
+  {
+    "speciesId": "greninja",
+    "score": 86.2,
+    "rating": 666,
+    "moveset": [
+      "WATER_SHURIKEN",
+      "HYDRO_CANNON",
+      "NIGHT_SLASH"
+    ]
+  },
+  {
+    "speciesId": "solrock",
+    "score": 86.2,
+    "rating": 695,
+    "moveset": [
+      "PSYWAVE",
+      "WEATHER_BALL_FIRE",
+      "ROCK_SLIDE"
+    ]
+  },
+  {
+    "speciesId": "araquanid_shadow",
+    "score": 86.1,
+    "rating": 694,
+    "moveset": [
+      "BUG_BITE",
+      "BUBBLE_BEAM",
+      "WATER_PULSE"
+    ]
+  },
+  {
+    "speciesId": "marowak_alolan",
+    "score": 86.1,
+    "rating": 667,
+    "moveset": [
+      "FIRE_SPIN",
+      "BONE_CLUB",
+      "SHADOW_BONE"
+    ]
+  },
+  {
+    "speciesId": "torkoal",
+    "score": 86.1,
+    "rating": 653,
+    "moveset": [
+      "EMBER",
+      "FLAME_WHEEL",
+      "OVERHEAT"
+    ]
+  },
+  {
+    "speciesId": "toxapex",
+    "score": 86.1,
+    "rating": 608,
+    "moveset": [
+      "POISON_JAB",
+      "BRINE",
+      "SLUDGE_WAVE"
+    ]
+  },
+  {
+    "speciesId": "zweilous_shadow",
+    "score": 86,
+    "rating": 729,
+    "moveset": [
+      "DRAGON_BREATH",
+      "BODY_SLAM",
+      "DARK_PULSE"
+    ]
+  },
+  {
+    "speciesId": "aurorus_shadow",
+    "score": 85.9,
+    "rating": 671,
+    "moveset": [
+      "POWDER_SNOW",
+      "WEATHER_BALL_ICE",
+      "METEOR_BEAM"
+    ]
+  },
+  {
+    "speciesId": "dubwool",
+    "score": 85.9,
+    "rating": 616,
+    "moveset": [
+      "DOUBLE_KICK",
+      "BODY_SLAM",
+      "PAYBACK"
+    ]
+  },
+  {
+    "speciesId": "hippowdon",
+    "score": 85.9,
+    "rating": 643,
+    "moveset": [
+      "SAND_ATTACK",
+      "WEATHER_BALL_ROCK",
+      "SCORCHING_SANDS"
+    ]
+  },
+  {
+    "speciesId": "lickitung",
+    "score": 85.9,
+    "rating": 621,
+    "moveset": [
+      "LICK",
+      "BODY_SLAM",
+      "POWER_WHIP"
+    ]
+  },
+  {
+    "speciesId": "linoone",
+    "score": 85.9,
+    "rating": 624,
+    "moveset": [
+      "SHADOW_CLAW",
+      "SWIFT",
+      "GRASS_KNOT"
+    ]
+  },
+  {
+    "speciesId": "marowak",
+    "score": 85.9,
+    "rating": 651,
+    "moveset": [
+      "MUD_SLAP",
+      "BONE_CLUB",
+      "ROCK_SLIDE"
+    ]
+  },
+  {
+    "speciesId": "metang",
+    "score": 85.9,
+    "rating": 699,
+    "moveset": [
+      "FURY_CUTTER",
+      "PSYSHOCK",
+      "GYRO_BALL"
+    ]
+  },
+  {
+    "speciesId": "metang_shadow",
+    "score": 85.9,
+    "rating": 695,
+    "moveset": [
+      "FURY_CUTTER",
+      "PSYSHOCK",
+      "GYRO_BALL"
+    ]
+  },
+  {
+    "speciesId": "gogoat",
+    "score": 85.8,
+    "rating": 628,
+    "moveset": [
+      "VINE_WHIP",
+      "LEAF_BLADE",
+      "ROCK_SLIDE"
+    ]
+  },
+  {
+    "speciesId": "marowak_alolan_shadow",
+    "score": 85.8,
+    "rating": 673,
+    "moveset": [
+      "FIRE_SPIN",
+      "SHADOW_BONE",
+      "BONE_CLUB"
+    ]
+  },
+  {
+    "speciesId": "pangoro",
+    "score": 85.8,
+    "rating": 725,
+    "moveset": [
+      "KARATE_CHOP",
+      "CLOSE_COMBAT",
+      "NIGHT_SLASH"
+    ]
+  },
+  {
+    "speciesId": "tentacruel",
+    "score": 85.8,
+    "rating": 597,
+    "moveset": [
+      "ACID",
+      "SCALD",
+      "PAYBACK"
+    ]
+  },
+  {
+    "speciesId": "ampharos",
+    "score": 85.7,
+    "rating": 621,
+    "moveset": [
+      "VOLT_SWITCH",
+      "BRUTAL_SWING",
+      "TRAILBLAZE"
+    ]
+  },
+  {
+    "speciesId": "claydol",
+    "score": 85.7,
+    "rating": 606,
+    "moveset": [
+      "MUD_SLAP",
+      "ROCK_TOMB",
+      "SHADOW_BALL"
+    ]
+  },
+  {
+    "speciesId": "dartrix",
+    "score": 85.7,
+    "rating": 668,
+    "moveset": [
+      "PECK",
+      "BRAVE_BIRD",
+      "SEED_BOMB"
+    ]
+  },
+  {
+    "speciesId": "hippowdon_shadow",
+    "score": 85.7,
+    "rating": 652,
+    "moveset": [
+      "SAND_ATTACK",
+      "WEATHER_BALL_ROCK",
+      "SCORCHING_SANDS"
+    ]
+  },
+  {
+    "speciesId": "abomasnow_shadow",
+    "score": 85.6,
+    "rating": 658,
+    "moveset": [
+      "POWDER_SNOW",
+      "WEATHER_BALL_ICE",
+      "ENERGY_BALL"
+    ]
+  },
+  {
+    "speciesId": "dodrio",
+    "score": 85.6,
+    "rating": 651,
+    "moveset": [
+      "PECK",
+      "DRILL_PECK",
+      "BRAVE_BIRD"
+    ]
+  },
+  {
+    "speciesId": "latias",
+    "score": 85.6,
+    "rating": 666,
+    "moveset": [
+      "DRAGON_BREATH",
+      "AURA_SPHERE",
+      "MIST_BALL"
+    ]
+  },
+  {
+    "speciesId": "walrein_shadow",
+    "score": 85.6,
+    "rating": 630,
+    "moveset": [
+      "POWDER_SNOW",
+      "ICICLE_SPEAR",
+      "EARTHQUAKE"
+    ]
+  },
+  {
+    "speciesId": "golisopodsh",
+    "score": 85.5,
+    "rating": 624,
+    "moveset": [
+      "SHADOW_CLAW",
+      "AQUA_JET",
+      "X_SCISSOR"
+    ]
+  },
+  {
+    "speciesId": "abomasnow",
+    "score": 85.3,
+    "rating": 658,
+    "moveset": [
+      "POWDER_SNOW",
+      "WEATHER_BALL_ICE",
+      "ENERGY_BALL"
+    ]
+  },
+  {
+    "speciesId": "bellossom",
+    "score": 85.3,
+    "rating": 619,
+    "moveset": [
+      "ACID",
+      "LEAF_BLADE",
+      "DAZZLING_GLEAM"
+    ]
+  },
+  {
+    "speciesId": "machoke_shadow",
+    "score": 85.2,
+    "rating": 694,
+    "moveset": [
+      "KARATE_CHOP",
+      "CROSS_CHOP",
+      "DYNAMIC_PUNCH"
+    ]
+  },
+  {
+    "speciesId": "mawile",
+    "score": 85.2,
+    "rating": 639,
+    "moveset": [
+      "FAIRY_WIND",
+      "VICE_GRIP",
+      "IRON_HEAD"
+    ]
+  },
+  {
+    "speciesId": "raichu",
+    "score": 85.2,
+    "rating": 605,
+    "moveset": [
+      "THUNDER_SHOCK",
+      "WILD_CHARGE",
+      "TRAILBLAZE"
+    ]
+  },
+  {
+    "speciesId": "toedscruel",
+    "score": 85.1,
+    "rating": 612,
+    "moveset": [
+      "MUD_SLAP",
+      "SEED_BOMB",
+      "WRAP"
+    ]
+  },
+  {
+    "speciesId": "togetic",
+    "score": 85.1,
+    "rating": 636,
+    "moveset": [
+      "FAIRY_WIND",
+      "PSYSHOCK",
+      "HEAT_WAVE"
+    ]
+  },
+  {
+    "speciesId": "cradily_shadow",
+    "score": 85,
+    "rating": 597,
+    "moveset": [
+      "ACID",
+      "ROCK_TOMB",
+      "GRASS_KNOT"
+    ]
+  },
+  {
+    "speciesId": "lunatone",
+    "score": 84.9,
+    "rating": 698,
+    "moveset": [
+      "PSYWAVE",
+      "WEATHER_BALL_ICE",
+      "ROCK_SLIDE"
+    ]
+  },
+  {
+    "speciesId": "qwilfish_hisuian",
+    "score": 84.9,
+    "rating": 653,
+    "moveset": [
+      "POISON_STING",
+      "AQUA_TAIL",
+      "SHADOW_BALL"
+    ]
+  },
+  {
+    "speciesId": "registeel",
+    "score": 84.9,
+    "rating": 563,
+    "moveset": [
+      "LOCK_ON",
+      "FOCUS_BLAST",
+      "ZAP_CANNON"
+    ]
+  },
+  {
+    "speciesId": "hypno",
+    "score": 84.8,
+    "rating": 637,
+    "moveset": [
+      "CONFUSION",
+      "SHADOW_BALL",
+      "THUNDER_PUNCH"
+    ]
+  },
+  {
+    "speciesId": "klang",
+    "score": 84.8,
+    "rating": 612,
+    "moveset": [
+      "METAL_SOUND",
+      "VICE_GRIP",
+      "THUNDERBOLT"
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "source": "engine_output_frozen_v1",
+  "league": "great_league",
+  "captured_at": "2026-05-13T12:00:00Z",
+  "notes": "Frozen engine recommendation snapshot used by the Sub-AC 5.3 integration test. Two of the three teams intentionally match the reference fixture's published cores (Azu/Anni/Registeel + Shadow Medicham bully) so the team-level Jaccard clears the default 0.2 'non-trivial' threshold. The third team is the engine's own divergent pick (Swampert/Gardevoir/Trevenant) and intentionally does NOT match any reference team — this exercises the partial-overlap case, not a trivial 100% mirror.",
+  "teams": [
+    {
+      "members": ["Registeel", "Annihilape", "Azumarill"]
+    },
+    {
+      "members": ["Lickitung (Shadow)", "Azumarill", "Medicham (Shadow)"]
+    },
+    {
+      "members": ["Swampert", "Gardevoir", "Trevenant"]
+    }
+  ]
+}
