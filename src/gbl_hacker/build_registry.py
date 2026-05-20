@@ -60,6 +60,35 @@ _DYNAMIC_FORM_SPECS: dict[str, tuple[str, bool, bool]] = {
 _RUNTIME_ONLY_SPECIES_IDS: set[str] = {"aegislash_blade"}
 
 
+# Regional-variant speciesId markers → the Japanese form suffix the render
+# layer's ``_FORM_SUFFIX`` table knows how to localize (ガラル→갈라르, etc.).
+# Regional variants share their dex id with the base species, so the
+# dex-keyed display name is form-blind ("マッギョ" for both base and Galarian
+# Stunfisk). We append the JA parenthetical here so the existing parens-aware
+# localizer surfaces the form — same path Taiman inline variants take.
+# Shadows are NOT here: they're handled via ``form_id`` (is_shadow → 1) which
+# the renderer turns into a "(섀도우)" suffix on its own.
+_REGIONAL_JA_SUFFIX: tuple[tuple[str, str], ...] = (
+    ("_galarian", "ガラル"),
+    ("_galar", "ガラル"),
+    ("_alolan", "アローラ"),
+    ("_alola", "アローラ"),
+    ("_hisuian", "ヒスイ"),
+    ("_hisui", "ヒスイ"),
+    ("_paldean", "パルデア"),
+    ("_paldea", "パルデア"),
+    ("_mega", "メガ"),
+)
+
+
+def _regional_suffix_for(species_id: str) -> str | None:
+    """Return the JA form suffix for a regional-variant speciesId, else None."""
+    for marker, ja_suffix in _REGIONAL_JA_SUFFIX:
+        if marker in species_id:
+            return ja_suffix
+    return None
+
+
 def materialize_build_from_ranking(
     ranking_species_id: str,
     *,
@@ -126,6 +155,14 @@ def materialize_build_from_ranking(
     # render layer's Japanese → Korean/English path works the same).
     dex_entry = dex_r.lookup(dex_id=pokemon.dex)
     display_name = dex_entry.ja if dex_entry else pokemon.species_name
+
+    # Regional variants share the base dex id, so the dex-keyed name above is
+    # form-blind. Append the JA form parenthetical (when not already present)
+    # so the render layer localizes e.g. "キュウコン(アローラ)" → "나인테일(알로라)"
+    # instead of the misleading base "나인테일". Shadow stays on form_id.
+    _ja_suffix = _regional_suffix_for(ranking_species_id)
+    if _ja_suffix and "(" not in display_name:
+        display_name = f"{display_name}({_ja_suffix})"
 
     fast = FastMove(
         name=fast_move.name,
