@@ -107,12 +107,16 @@ _FORM_SUFFIX_PVPOKE: dict[str, str] = {
 # Each entry: dex_id → PvPoke speciesId of the form the JP site means
 # when it emits a bare species_ja with form_id=0.
 _DEX_GL_OVERRIDE: dict[int, str] = {
-    # マッギョ — GBL Great League meta universally uses Galarian
-    # Stunfisk (steel/ground); base Stunfisk (electric/ground) is
-    # effectively absent from any 1500CP team in the recorded fixture.
-    # The site does not parenthesize "ガラル" for this species, so
-    # without this override the resolver picks base Stunfisk.
-    618: "stunfisk_galarian",
+    # NOTE: 618 マッギョ was previously force-mapped to "stunfisk_galarian"
+    # on the assumption the JP feed's bare マッギョ always means Galarian.
+    # That is empirically FALSE in the recorded fixtures: the Taiman
+    # pokemon_usage row for マッギョ carries ELECTRIC moves (でんきショック /
+    # ほうでん — Thunder Shock / Discharge), which Galarian Stunfisk
+    # (ground/steel) cannot learn — so the bare name denotes BASE Stunfisk
+    # (ground/electric). The override stapled regular's electric moveset
+    # onto a Galarian-typed body (a chimera). Galarian is still reachable
+    # via the explicit "マッギョ(ガラル)" suffix. Keep this dict for genuine
+    # name-collision cases, but verify against usage data before adding one.
 }
 
 _PARENS_RE = re.compile(r"^(.*?)\s*\(([^)]+)\)\s*$")
