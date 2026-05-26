@@ -405,6 +405,7 @@ def set_driver_win_rate(
     stochastic_samples: int = 1,
     rng_seed: int | None = None,
     active_switch: bool = False,
+    win_mode: str = "ko",
 ) -> float:
     """Estimate ``team_a``'s set-level win rate via the full set driver.
 
@@ -441,6 +442,7 @@ def set_driver_win_rate(
             team_b,
             starting_shields=starting_shields,
             active_switch=active_switch,
+            win_mode=win_mode,
         )
         if result.winner == "A":
             return 1.0
@@ -469,6 +471,7 @@ def set_driver_win_rate(
             starting_shields=starting_shields,
             rng=sample_rng,
             active_switch=active_switch,
+            win_mode=win_mode,
         )
         if result.winner == "A":
             total += 1.0

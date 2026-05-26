@@ -204,6 +204,36 @@ class SetSimulation:
     final_b: SetSide
 
 
+# Resource-win weights for the set-level tiebreak (``win_mode="resource"``).
+# A stalled set — both sides still alive at the turn-budget cap — is a draw
+# under KO scoring, but real GBL has no draws: the side ahead on residual
+# resources (alive Pokémon first, then shields, then HP, then banked energy)
+# is the one winning. These weights order those resources by GBL value.
+_RESOURCE_ALIVE_BONUS: float = 1.0     # baseline value of keeping a Pokémon alive
+_RESOURCE_SHIELD_WEIGHT: float = 0.5   # per unused shield
+_RESOURCE_ENERGY_WEIGHT: float = 0.25  # per full energy bar (energy/100)
+
+
+def _resource_score(side: SetSide) -> float:
+    """Sum the residual battle resources of a side's surviving Pokémon.
+
+    Fainted slots contribute nothing — a dead Pokémon's leftover shields and
+    energy are worthless. Each alive slot is worth a baseline
+    ``_RESOURCE_ALIVE_BONUS`` (so Pokémon-count dominates), plus its HP
+    fraction, unused shields, and banked energy. Used only to break a stalled
+    (non-KO) set under ``win_mode="resource"``.
+    """
+    total = 0.0
+    for slot in side.slots:
+        if slot.fainted or slot.hp <= 0:
+            continue
+        total += _RESOURCE_ALIVE_BONUS
+        total += slot.hp / slot.build.max_hp
+        total += _RESOURCE_SHIELD_WEIGHT * slot.shields
+        total += _RESOURCE_ENERGY_WEIGHT * (slot.energy / 100.0)
+    return total
+
+
 def simulate_set(
     team_a: CandidateTeam,
     team_b: CandidateTeam,
@@ -212,6 +242,7 @@ def simulate_set(
     max_total_turns: int = MAX_TURNS * 3,
     rng: random.Random | None = None,
     active_switch: bool = False,
+    win_mode: Literal["ko", "resource"] = "ko",
 ) -> SetSimulation:
     """Walk two lineups through a complete 3v3 GBL set.
 
@@ -364,6 +395,14 @@ def simulate_set(
         winner: Side | None = "A"
     elif side_b.any_alive and not side_a.any_alive:
         winner = "B"
+    elif win_mode == "resource" and (side_a.any_alive or side_b.any_alive):
+        # Stalled set (both sides still have a live Pokémon, turn budget
+        # spent). KO scoring calls this a draw; resource scoring awards it
+        # to whoever is ahead on alive Pokémon / shields / HP / energy —
+        # which is the side actually winning the resource game.
+        res_a = _resource_score(side_a)
+        res_b = _resource_score(side_b)
+        winner = "A" if res_a > res_b else ("B" if res_b > res_a else None)
     else:
         winner = None
 
