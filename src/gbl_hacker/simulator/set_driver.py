@@ -43,9 +43,10 @@ from gbl_hacker.simulator.matchup import (
     CombatantBuild,
     CombatantState,
     MatchupResult,
+    _move_damage,
     resolve_matchup,
 )
-from gbl_hacker.simulator.state import MAX_SHIELDS
+from gbl_hacker.simulator.state import ENERGY_CAP, MAX_SHIELDS
 
 # Active-switch decision margin: a teammate must out-score the current
 # on-field by at least this much (on the type-matchup heuristic) to
@@ -305,18 +306,33 @@ def simulate_set(
         # because the per-matchup heuristic is expensive over large
         # candidate pools.
         if active_switch:
-            swap_a = _decide_active_switch(
-                side_a, opponent_on_field=b_slot.build
-            )
+            # Both sides decide simultaneously (against the pre-switch
+            # opponent) so the tempo cost below can tell whether exactly
+            # one side switched.
+            swap_a = _decide_active_switch(side_a, opponent_on_field=b_slot.build)
+            swap_b = _decide_active_switch(side_b, opponent_on_field=a_slot.build)
             if swap_a is not None:
                 side_a = _apply_active_switch(side_a, swap_a)
-                a_slot = side_a.slots[side_a.on_field]
-            swap_b = _decide_active_switch(
-                side_b, opponent_on_field=a_slot.build
-            )
             if swap_b is not None:
                 side_b = _apply_active_switch(side_b, swap_b)
-                b_slot = side_b.slots[side_b.on_field]
+            a_slot = side_a.slots[side_a.on_field]
+            b_slot = side_b.slots[side_b.on_field]
+            # Tempo cost of switching: a lone switcher spends its turn
+            # bringing the new Pokémon in, so the opponent lands one free
+            # fast move (damage + banked energy). A simultaneous double
+            # switch costs neither side.
+            if swap_a is not None and swap_b is None:
+                a_slot, b_slot = _apply_switch_tempo_cost(
+                    incoming=a_slot, opponent=b_slot
+                )
+                side_a = _replace_slot(side_a, a_slot, index=side_a.on_field)
+                side_b = _replace_slot(side_b, b_slot, index=side_b.on_field)
+            elif swap_b is not None and swap_a is None:
+                b_slot, a_slot = _apply_switch_tempo_cost(
+                    incoming=b_slot, opponent=a_slot
+                )
+                side_a = _replace_slot(side_a, a_slot, index=side_a.on_field)
+                side_b = _replace_slot(side_b, b_slot, index=side_b.on_field)
 
         # Per-matchup turn budget: leave room for downstream matchups.
         remaining = max_total_turns - total_turns
@@ -544,6 +560,37 @@ def _decide_active_switch(
                 return i
 
     return None
+
+
+def _apply_switch_tempo_cost(
+    *, incoming: SetSlot, opponent: SetSlot
+) -> tuple[SetSlot, SetSlot]:
+    """Charge the tempo cost of an active switch.
+
+    Switching spends the switcher's turn, so the opponent lands one free
+    fast move while the new Pokémon comes in: the ``incoming`` slot takes
+    the opponent's fast-move damage and the ``opponent`` banks that fast
+    move's energy. Returns ``(new_incoming, new_opponent)``. Callers must
+    skip this on a simultaneous double switch (neither side gets the free
+    move — both spent their turn switching).
+    """
+    inc_cs = incoming.to_combatant_state()
+    opp_cs = opponent.to_combatant_state()
+    opp_fast = opp_cs.effective_build.fast
+    damage = _move_damage(
+        opp_cs.effective_build,
+        inc_cs.effective_build,
+        move_power=opp_fast.power,
+        move_type=opp_fast.move_type,
+        legacy_damage=opp_fast.damage,
+        atk_stage=opp_cs.atk_stage,
+        def_stage=inc_cs.def_stage,
+    )
+    new_hp = max(0, incoming.hp - damage)
+    new_incoming = incoming.with_(hp=new_hp, fainted=(new_hp == 0))
+    new_energy = min(ENERGY_CAP, opponent.energy + opp_fast.energy_gain)
+    new_opponent = opponent.with_(energy=new_energy)
+    return new_incoming, new_opponent
 
 
 def _fold_result(
