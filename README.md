@@ -57,6 +57,8 @@ uv run gblh recommend \
 | `--opponents ranking` | (기본) | PvPoke top 기반 합성 opponent 30팀 |
 | `--stochastic-samples 5` | (기본) | 쉴드 결정 stochasticity 평균. WCR 0/100 collapse 방지 |
 | `--exclude` | JP 종명 콤마구분 | 후보 풀에서 제외 (상대 풀은 안 빠짐) |
+| `--win-mode` | `ko`(기본)/`resource` | 턴버짓 내 미KO 스톨 처리. `resource`=잔여자원(생존>쉴드>HP>에너지) 우위 팀에 승 |
+| `--critique` | (플래그) | #1 팀에 red-team 비판: 팀 전체 공격 blind spot + 최악 시뮬 매치업 교차참조 |
 | `--lang ko` | (기본) | 출력 종명 한국어 |
 
 `--stochastic-samples 1` 로 바꾸면 결정론 모드(빠르지만 WCR 의미 없음, legacy).
@@ -127,5 +129,21 @@ uv run gblh report-rating --team-id <id> --pre 2845 --post 2861 --notes "altaria
 - **WCR**: 사용률 가중 10th-percentile 승률 (worst-case robustness, `--stochastic-samples > 1` 일 때만 의미 있음)
 - **COV**: meta coverage — 메타 종 단위로 본 커버리지
 - **Pareto size**: 세 축 모두 dominated 되지 않는 팀 개수. 1~2팀만 나오면 합성 상대 풀이 한쪽으로 쏠려 있을 가능성 (cf. WCR collapse caveat)
+
+### 신뢰도 신호 (자동 출력)
+
+추천 표 아래에 항상 따라 나온다 (숨길 플래그 없음):
+
+- **TRUST — opponent-pool sensitivity**: top-K 팀을 *반대* 상대 풀(ranking↔meta) 양쪽에 채점한 EWR과 그 차이. gap ≥15%면 ⚠ — 그 순위는 상대 풀 선택에 의존한다는 뜻 (PvPoke 이론강팀엔 강하지만 실전 메타엔 약함, 또는 그 반대).
+- **FRAGILE FRONTIER 경보**: `pareto_size ≤ 2`면 프론티어가 붕괴한 것 — 한 팀이 모든 축을 지배해서가 아니라 상대 풀이 쏠렸을 신호. top 픽을 잠정으로 취급하라는 경고.
+
+### `--critique` red-team 리포트
+
+- **offensive blind spots**: 팀 3마리의 공격 무브 타입을 모아, 그중 *어느 것도 super-effective가 아닌* 메타 종 (사용률순). per-mon 방어약점이 아니라 **팀 전체가 SE 레버리지 없는 적**을 잡는다 (예: 메더/파이어로/쏘콘 → Diggersby 노말/땅).
+- **worst simulated matchups**: 메타 30팀 대비 시뮬 승률 최하위. blind-spot 종을 포함한 매치업엔 ⚠ — 가설(blind spot)을 시뮬(승률)로 확정한다.
+
+### 빌드 정합성 (fact layer)
+
+모든 빌드는 materialize 시 `gbl_hacker.coherence`로 검증된다 — 타이핑+무브가 단일 실제 gamemaster 폼으로 설명돼야 함. 어긋나면(과거 "メダ 키메라" 클래스) 기본 경고, `coherence="raise"`로 차단. 신선 스냅샷의 데이터 오염을 런타임에 잡는다.
 
 데이터 신뢰성 caveat (Taiman은 report-density 가중 upper-bracket 피드)은 모든 `refresh`·`show` 출력에 구조적으로 박혀 나온다. 숨길 수 있는 플래그 없음.
