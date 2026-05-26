@@ -106,3 +106,38 @@ def test_detects_unlearnable_move(meta_registry, pvpoke_builds):
     grafted = dataclasses.replace(stunfisk, fast=talonflame.fast)  # Incinerate
     violations = validate_build_coherence(grafted)
     assert any("fast move" in v and "Incinerate" in v for v in violations), violations
+
+
+# --------------------------------------------------- build-pipeline guard
+def test_strict_meta_registry_passes():
+    """The pinned fixture must materialize cleanly under the strict policy —
+    the regression guard at the pipeline boundary."""
+    snap = read_snapshot(_FIXTURE)
+    build_registry_for_meta(snap, coherence="raise")  # must not raise
+
+
+def test_strict_pvpoke_top_passes():
+    build_registry_pvpoke_top(top_n=30, coherence="raise")  # must not raise
+
+
+def test_default_policy_is_silent_on_clean_fixture(recwarn):
+    snap = read_snapshot(_FIXTURE)
+    build_registry_for_meta(snap)  # default "warn"
+    assert not [w for w in recwarn.list if "incoherent" in str(w.message)]
+
+
+def test_invalid_coherence_policy_rejected():
+    snap = read_snapshot(_FIXTURE)
+    with pytest.raises(ValueError, match="coherence must be one of"):
+        build_registry_for_meta(snap, coherence="bogus")
+
+
+def test_runtime_guard_catches_reintroduced_override(monkeypatch):
+    """Re-adding the dex-618 Galarian override recreates the chimera; the
+    strict pipeline guard must reject it."""
+    import gbl_hacker.gamemaster as gmmod
+
+    monkeypatch.setattr(gmmod, "_DEX_GL_OVERRIDE", {618: "stunfisk_galarian"})
+    snap = read_snapshot(_FIXTURE)
+    with pytest.raises(ValueError, match="incoherent"):
+        build_registry_for_meta(snap, coherence="raise")

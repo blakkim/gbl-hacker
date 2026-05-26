@@ -38,7 +38,29 @@ from gbl_hacker.parse.taiman import (
     PokemonUsage,
     TeamUsage,
 )
+from gbl_hacker.coherence import validate_builds
 from gbl_hacker.simulator import ChargedMove, CombatantBuild, FastMove
+
+# Build-coherence enforcement policies (see _enforce_coherence). The default
+# is "warn" so a fresh snapshot that introduces a typing/moveset desync (the
+# マッギョ chimera class) surfaces at materialization without crashing a run.
+_COHERENCE_POLICIES = ("off", "warn", "raise")
+
+
+def _enforce_coherence(offenders: dict[str, list[str]], policy: str) -> None:
+    """Apply the coherence ``policy`` to a batch's ``{tag: [violations]}``."""
+    if not offenders or policy == "off":
+        return
+    body = "\n".join(f"  {tag}: {'; '.join(v)}" for tag, v in offenders.items())
+    msg = (
+        "build_registry materialized incoherent build(s) — typing/moveset "
+        f"matches no real gamemaster form:\n{body}"
+    )
+    if policy == "raise":
+        raise ValueError(msg)
+    import warnings
+
+    warnings.warn(msg, stacklevel=2)
 
 
 # PvPoke speciesIds that participate in a dynamic in-battle form
@@ -303,6 +325,7 @@ def build_registry_pvpoke_top(
     *,
     gm: GamemasterRegistry | None = None,
     dex: PokedexRegistry | None = None,
+    coherence: str = "warn",
 ) -> list[tuple[str, str, CombatantBuild]]:
     """Materialize the top-N PvPoke-ranked species in GL.
 
@@ -344,6 +367,12 @@ def build_registry_pvpoke_top(
         result.append((label_ja, ranking.species_id, build))
         if len(result) >= top_n:
             break
+
+    if coherence not in _COHERENCE_POLICIES:
+        raise ValueError(f"coherence must be one of {_COHERENCE_POLICIES}")
+    _enforce_coherence(
+        validate_builds([b for _, _, b in result], gm=gm_r, dex=dex_r), coherence
+    )
     return result
 
 
@@ -523,6 +552,7 @@ def build_registry_for_meta(
     gm: GamemasterRegistry | None = None,
     dex: PokedexRegistry | None = None,
     moveset_source: str = "ladder",
+    coherence: str = "warn",
 ) -> dict[str, CombatantBuild]:
     """Materialize every species + form appearing in ``meta``.
 
@@ -587,6 +617,9 @@ def build_registry_for_meta(
         for member, form in zip(team.members, team.member_forms):
             _add(member, form)
 
+    if coherence not in _COHERENCE_POLICIES:
+        raise ValueError(f"coherence must be one of {_COHERENCE_POLICIES}")
+    _enforce_coherence(validate_builds(registry, gm=gm_r, dex=dex_r), coherence)
     return registry
 
 
