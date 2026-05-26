@@ -514,12 +514,21 @@ def _select_charged_move(
             key=lambda m: _hit_damage(m) / max(1, m.energy_cost),
         )
 
-    # Defender shielded: spend the cheapest move first to drain a shield,
-    # unless one of the options KOs through the shield bleed (impossible
-    # in v0.2 since shielded damage = SHIELD_BLEED_DAMAGE — but defend
-    # in depth: shielded HP cannot be 1 because hp == 0 ⇒ dead, so this
-    # branch is unreachable; kept for clarity).
-    return min(options, key=lambda m: m.energy_cost)
+    # Defender has a shield. Bait (cheapest move, to strip the shield)
+    # ONLY when the attacker holds a move threatening enough that the
+    # defender is forced to shield it — lethal or near-lethal. Stripping
+    # the shield now lets that move connect later. With no such threat,
+    # fire the best honest (highest-DPE) move rather than wasting tempo
+    # on a bait the defender would simply call ("정직하게 던져도 이기면
+    # 베이트 안 한다"). Whether a bait is *game-deciding* beyond this
+    # matchup needs set-level context the resolver lacks; this is the
+    # local approximation of that judgement.
+    cheapest = min(options, key=lambda m: m.energy_cost)
+    nuke = max(options, key=_hit_damage)
+    forcing_threat = _hit_damage(nuke) >= _BAIT_THREAT_FRACTION * defender_state.hp
+    if forcing_threat and cheapest.energy_cost < nuke.energy_cost:
+        return cheapest
+    return max(options, key=lambda m: _hit_damage(m) / max(1, m.energy_cost))
 
 
 def _bounded_energy(value: int) -> int:
@@ -537,6 +546,15 @@ stochastic RNG is supplied. ``0.5`` is a conservative ladder baseline —
 real top-rank players often farm a non-lethal first cast to bait the
 shield, but they also shield-on-instinct sometimes. The defender ALWAYS
 shields a lethal cast (damage >= remaining HP), regardless of RNG."""
+
+
+_BAIT_THREAT_FRACTION: float = 0.85
+"""Fraction of the defender's *current* HP a charged move must threaten for
+the attacker to bother baiting a shield. A move doing >= 85% of current HP
+(near-lethal) or more is one the defender is essentially forced to shield, so
+stripping that shield with a cheaper move first is worth it. Below that, the
+attacker fires its best honest move instead of baiting — needless baits get
+called and tangle the position (top-player guidance)."""
 
 
 def _apply_charged(
