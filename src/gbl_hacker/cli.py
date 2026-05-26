@@ -748,6 +748,18 @@ def build_arg_parser() -> argparse.ArgumentParser:
         ),
     )
     recommend.add_argument(
+        "--critique",
+        action="store_true",
+        dest="critique",
+        help=(
+            "After ranking, run a deterministic red-team critique on the #1 "
+            "team: its team-wide offensive blind spots (meta species it has "
+            "no super-effective answer to) plus the worst simulated matchups, "
+            "cross-referenced. Turns the team's weaknesses from rhetoric into "
+            "sim-backed evidence."
+        ),
+    )
+    recommend.add_argument(
         "--debug",
         action="store_true",
         help="Re-raise underlying exceptions instead of catching and exiting.",
@@ -1179,6 +1191,7 @@ def cmd_recommend(
     active_switch: bool = False,
     win_mode: str = "ko",
     exclude: str = "",
+    critique: bool = False,
 ) -> int:
     """Execute the ``recommend`` subcommand.
 
@@ -1576,6 +1589,31 @@ def cmd_recommend(
             raise
         print(f"gblh recommend: trust signal skipped: {exc}", file=stderr)
 
+    # Optional red-team critique of the #1 team.
+    if critique and top:
+        try:
+            from gbl_hacker.critique import critique_team, format_critique
+            from gbl_hacker.render.recommendation import _localize
+
+            crit = critique_team(
+                top[0].team, snapshot, registry, set_win_rate_fn=set_fn
+            )
+            print(file=stdout)
+            print(
+                format_critique(
+                    crit,
+                    team_name=_team_display_name(top[0].team, registry_dex, lang),
+                    localize=lambda s: _localize(
+                        s, registry=registry_dex, lang=lang  # type: ignore[arg-type]
+                    ),
+                ),
+                file=stdout,
+            )
+        except Exception as exc:  # never fail the run over a critique readout
+            if debug:
+                raise
+            print(f"gblh recommend: critique skipped: {exc}", file=stderr)
+
     if skipped:
         print(
             (
@@ -1807,6 +1845,7 @@ def main(
             active_switch=args.active_switch,
             win_mode=args.win_mode,
             exclude=args.exclude,
+            critique=args.critique,
         )
 
     if args.command == "verify-reference":
