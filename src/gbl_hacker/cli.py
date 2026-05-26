@@ -721,6 +721,20 @@ def build_arg_parser() -> argparse.ArgumentParser:
         ),
     )
     recommend.add_argument(
+        "--win-mode",
+        choices=["ko", "resource"],
+        default="ko",
+        dest="win_mode",
+        help=(
+            "How a set is scored when neither side is fully KO'd by the "
+            "turn-budget cap. 'ko' (default) calls such stalls a draw. "
+            "'resource' awards the stall to the side ahead on residual "
+            "resources (alive Pokémon > shields > HP > energy) — real GBL "
+            "has no draws, so this credits bulky 'force-shield then farm "
+            "down on resource lead' lines that KO scoring misses."
+        ),
+    )
+    recommend.add_argument(
         "--exclude",
         type=str,
         default="",
@@ -1053,6 +1067,99 @@ def cmd_report_rating(
     return EXIT_OK
 
 
+def _team_display_name(team, dex_registry, lang: str) -> str:
+    """Localized ``lead / safe_swap / closer`` name for trust readouts."""
+    from gbl_hacker.render.recommendation import _localize
+
+    shadow_marker = {"ko": "(섀도우)", "ja": "(シャドウ)", "en": "(shadow)"}
+    names = []
+    for build in team.slots:
+        loc = _localize(build.species, registry=dex_registry, lang=lang)
+        if build.form_id and "(" not in loc:
+            loc += shadow_marker.get(lang, shadow_marker["ja"])
+        names.append(loc)
+    return " / ".join(names)
+
+
+def _render_trust_signals(
+    top,
+    *,
+    frontier_size: int,
+    opponents: str,
+    primary_label: str,
+    snapshot,
+    registry: dict,
+    opponents_size: int,
+    set_fn,
+    lang: str,
+    dex_registry,
+    stream: TextIO,
+    debug: bool,
+) -> None:
+    """Render opponent-pool sensitivity + frontier-fragility trust signals.
+
+    Re-scores the top-K teams against the opponent pool *not* used for the
+    headline score (ranking ↔ meta) so the divergence is visible, and raises
+    a fragility alarm when the Pareto frontier collapsed.
+    """
+    from gbl_hacker.trust import TrustRow, format_trust_table, pareto_alarm
+
+    # The cross-check pool is whichever pool the primary score did NOT use.
+    cross_snapshot = None
+    cross_registry: dict = {}
+    if opponents == "ranking":
+        cross_label = "Taiman meta"
+        cross_snapshot, cross_registry = snapshot, registry
+    else:
+        cross_label = "PvPoke-synthetic"
+        try:
+            cross_snapshot, cross_synth = synthesize_pvpoke_opponent_meta(
+                top_n=opponents_size, meta_snapshot=snapshot
+            )
+            cross_registry = dict(registry)
+            cross_registry.update(cross_synth)
+        except Exception:
+            if debug:
+                raise
+            cross_snapshot = None
+
+    rows: list[TrustRow] = []
+    if cross_snapshot is not None and cross_snapshot.team_usage:
+        for st in top:
+            try:
+                ewr_cross = expected_win_rate(
+                    st.team,
+                    cross_snapshot,
+                    build_registry=cross_registry,
+                    on_missing_build="skip",
+                    set_win_rate_fn=set_fn,
+                )
+            except Exception:
+                if debug:
+                    raise
+                continue
+            rows.append(
+                TrustRow(
+                    name=_team_display_name(st.team, dex_registry, lang),
+                    ewr_primary=st.score.expected_win_rate,
+                    ewr_cross=ewr_cross,
+                )
+            )
+
+    if rows:
+        print(file=stream)
+        print(
+            format_trust_table(
+                rows, primary_label=primary_label, cross_label=cross_label
+            ),
+            file=stream,
+        )
+    alarm = pareto_alarm(frontier_size, opponents_label=primary_label)
+    if alarm:
+        print(file=stream)
+        print(alarm, file=stream)
+
+
 def cmd_recommend(
     *,
     cache_dir: Path | None,
@@ -1070,6 +1177,7 @@ def cmd_recommend(
     opponents_size: int = 30,
     stochastic_samples: int = 5,
     active_switch: bool = False,
+    win_mode: str = "ko",
     exclude: str = "",
 ) -> int:
     """Execute the ``recommend`` subcommand.
@@ -1183,13 +1291,14 @@ def cmd_recommend(
 
     # Stage 3: build the candidate list.
     if engine == "set-driver":
-        if stochastic_samples > 1 or active_switch:
+        if stochastic_samples > 1 or active_switch or win_mode != "ko":
             def _set_fn_configured(a, b):  # type: ignore[no-untyped-def]
                 return set_driver_win_rate(
                     a,
                     b,
                     stochastic_samples=stochastic_samples,
                     active_switch=active_switch,
+                    win_mode=win_mode,
                 )
 
             set_fn = _set_fn_configured
@@ -1446,6 +1555,27 @@ def cmd_recommend(
         all_scored=meta_scored,
     )
 
+    # Trust signals: opponent-pool sensitivity + frontier fragility.
+    try:
+        _render_trust_signals(
+            top,
+            frontier_size=len(frontier),
+            opponents=opponents,
+            primary_label=opponent_label,
+            snapshot=snapshot,
+            registry=registry,
+            opponents_size=opponents_size,
+            set_fn=set_fn,
+            lang=lang,
+            dex_registry=registry_dex,
+            stream=stdout,
+            debug=debug,
+        )
+    except Exception as exc:  # never fail the run over a trust readout
+        if debug:
+            raise
+        print(f"gblh recommend: trust signal skipped: {exc}", file=stderr)
+
     if skipped:
         print(
             (
@@ -1675,6 +1805,7 @@ def main(
             opponents_size=args.opponents_size,
             stochastic_samples=args.stochastic_samples,
             active_switch=args.active_switch,
+            win_mode=args.win_mode,
             exclude=args.exclude,
         )
 
